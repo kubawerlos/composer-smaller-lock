@@ -1,0 +1,26 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "version": "1.0.0",
+            "type": "library",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/123",
+                "reference": "123"
+            }
+        },
+        {
+            "name": "foo/baz",
+            "version": "1.0.0",
+            "type": "library",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/1234",
+                "reference": "1234",
+                "shasum": "do not remove non-empty value"
+            }
+        }
+    ],
+    "packages-dev": []
+}

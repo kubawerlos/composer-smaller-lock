@@ -1,0 +1,60 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "description": "description",
+            "version": "1.0.0",
+            "type": "library",
+            "keywords": [
+                "foo",
+                "bar"
+            ],
+            "homepage": "www.example.com",
+            "readme": "./README.md",
+            "time": "1970-01-01T00:00:00+00:00",
+            "license": "MIT",
+            "authors": [
+                {
+                    "name": "John Doe",
+                    "email": "johndoe@example.com"
+                }
+            ],
+            "support": {
+                "email": "support@example.org",
+                "irc": "irc://irc.freenode.org/composer"
+            },
+            "require": {
+                "monolog/monolog": "dev-master"
+            },
+            "require-dev": {
+                "acme/foo": "1.0.x-dev#abc123"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foo\\Bar\\": "./src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\Foo\\Bar\\": "./tests"
+                }
+            },
+            "source": {
+                "type": "git",
+                "url": "https://api.github.com/123",
+                "reference": "123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/123",
+                "reference": "123",
+                "shasum": ""
+            },
+            "suggest": {
+                "monolog/monolog": "Allows more advanced logging of the application flow",
+                "ext-xml": "Needed to support XML format in class Foo"
+            }
+        }
+    ],
+    "packages-dev": []
+}

@@ -1,0 +1,25 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "version": "1.0.0",
+            "type": "library",
+            "extra": {
+                "some_key": "remove whole extra section when type is not composer-plugin",
+                "class": "Foo\\Bar\\PluginClass",
+                "other_key": "other value"
+            }
+        },
+        {
+            "name": "foo/baz",
+            "version": "1.0.0",
+            "type": "composer-plugin",
+            "extra": {
+                "some_key": "remove everything, but 'class' key extra section when type is composer-plugin",
+                "class": "Foo\\Baz\\PluginClass",
+                "other_key": "other value"
+            }
+        }
+    ],
+    "packages-dev": []
+}

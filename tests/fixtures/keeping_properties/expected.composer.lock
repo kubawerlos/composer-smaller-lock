@@ -1,0 +1,30 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "description": "description",
+            "version": "1.0.0",
+            "type": "library",
+            "license": "MIT",
+            "require": {
+                "monolog/monolog": "dev-master"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Foo\\Bar\\": "./src"
+                }
+            },
+            "source": {
+                "type": "git",
+                "url": "https://api.github.com/123",
+                "reference": "123"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/123",
+                "reference": "123"
+            }
+        }
+    ],
+    "packages-dev": []
+}

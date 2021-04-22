@@ -1,0 +1,33 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "type": "library",
+            "version": "1.0.0"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "foo/bar-dev",
+            "type": "library",
+            "version": "1.0.0"
+        },
+        {
+            "name": "foo/bar-composer-plugin",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PluginClass"
+            },
+            "require": {
+                "composer-plugin-api": "^2",
+                "foo/bar": "^1"
+            },
+            "version": "1.0.0"
+        },
+        {
+            "name": "foo/bar-not-composer-plugin",
+            "type": "library",
+            "version": "1.0.0"
+        }
+    ]
+}

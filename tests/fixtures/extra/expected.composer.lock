@@ -1,0 +1,18 @@
+{
+    "packages": [
+        {
+            "name": "foo/bar",
+            "version": "1.0.0",
+            "type": "library"
+        },
+        {
+            "name": "foo/baz",
+            "version": "1.0.0",
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Foo\\Baz\\PluginClass"
+            }
+        }
+    ],
+    "packages-dev": []
+}
