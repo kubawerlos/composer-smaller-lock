@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Composer smaller lock.
+ * This file is part of composer-smaller-lock.
  *
  * (c) 2021 Kuba Werłos
  *
