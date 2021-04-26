@@ -3,8 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$content = file_get_contents(__DIR__ . '/README.template.md');
-
 $composerLockPath = __DIR__ . '/vendor/composer/composer/composer.lock';
 $originalComposerLockContent = file_get_contents($composerLockPath);
 $originalNumberOfLines = substr_count($originalComposerLockContent, "\n") + 1;
@@ -42,8 +40,8 @@ $replacements = [
     '{COMPOSER_LOCK_DIFF}' => diff($originalComposerLockContent, $newComposerLockContent),
 ];
 
+$content = file_get_contents(__DIR__ . '/README.template.md');
 $content = str_replace(array_keys($replacements), array_values($replacements), $content);
-
 file_put_contents(__DIR__ . '/../README.md', $content);
 
 function getComposerVersion()
