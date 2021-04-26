@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of Composer smaller lock.
+ * This file is part of composer-smaller-lock.
  *
  * (c) 2021 Kuba Werłos
  *
@@ -11,12 +11,22 @@
 
 declare(strict_types=1);
 
-return PhpCsFixerConfig\Factory::createForLibrary('Composer smaller lock', 'Kuba Werłos', 2021)
+$config = PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
     ->setFinder(
         PhpCsFixer\Finder::create()
             ->files()
             ->in(__DIR__ . '/src')
             ->in(__DIR__ . '/tests')
-            ->append([__FILE__])
+            ->append([
+                __DIR__ . '/.dev-tools/generate_readme.php',
+                __FILE__,
+            ])
     );
+
+$rules = $config->getRules();
+$rules['php_unit_internal_class'] = false;
+$rules['php_unit_test_class_requires_covers'] = false;
+$config->setRules($rules);
+
+return $config;

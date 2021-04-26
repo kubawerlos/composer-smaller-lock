@@ -1,7 +1,8 @@
 {
     "name": "kubawerlos/composer-smaller-lock",
     "type": "composer-plugin",
-    "description": "Plugin to keep composer.lock file smaller and readable",
+    "description": "Plugin to keep composer.lock smaller and readable",
+    "license": "MIT",
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
