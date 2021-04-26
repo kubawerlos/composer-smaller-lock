@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-return PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
+$config = PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
     ->setFinder(
         PhpCsFixer\Finder::create()
@@ -23,3 +23,10 @@ return PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba
                 __FILE__,
             ])
     );
+
+$rules = $config->getRules();
+$rules['php_unit_internal_class'] = false;
+$rules['php_unit_test_class_requires_covers'] = false;
+$config->setRules($rules);
+
+return $config;
