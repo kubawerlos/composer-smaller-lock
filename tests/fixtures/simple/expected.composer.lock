@@ -3,6 +3,9 @@
         {
             "name": "foo/bar",
             "type": "library",
+            "bin": [
+                "bin-command"
+            ],
             "version": "1.0.0"
         }
     ],

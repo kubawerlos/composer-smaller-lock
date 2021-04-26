@@ -25,6 +25,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
 {
     private const PROPERTIES_TO_KEEP = [
         'autoload',
+        'bin',
         'description',
         'dist',
         'extra',

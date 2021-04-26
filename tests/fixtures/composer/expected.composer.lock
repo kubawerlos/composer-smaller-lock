@@ -133,6 +133,9 @@
             "require": {
                 "php": ">=5.3.3"
             },
+            "bin": [
+                "bin/validate-json"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -217,6 +220,9 @@
             "require": {
                 "php": "^5.3 || ^7.0 || ^8.0"
             },
+            "bin": [
+                "bin/jsonlint"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -684,6 +690,9 @@
             "require": {
                 "php": ">=5.3.3"
             },
+            "bin": [
+                "bin/simple-phpunit"
+            ],
             "type": "symfony-bridge",
             "autoload": {
                 "files": [

@@ -4,6 +4,9 @@
             "name": "foo/bar",
             "type": "library",
             "this_must_be_removed": true,
+            "bin": [
+                "bin-command"
+            ],
             "version": "1.0.0"
         }
     ],
