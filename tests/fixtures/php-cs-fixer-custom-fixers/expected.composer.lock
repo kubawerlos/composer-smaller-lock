@@ -148,6 +148,9 @@
                 "symfony/process": "^3.0 || ^4.0 || ^5.0",
                 "symfony/stopwatch": "^3.0 || ^4.0 || ^5.0"
             },
+            "bin": [
+                "php-cs-fixer"
+            ],
             "type": "application",
             "autoload": {
                 "psr-4": {
@@ -945,6 +948,9 @@
                 "ext-tokenizer": "*",
                 "php": ">=7.0"
             },
+            "bin": [
+                "bin/php-parse"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1321,6 +1327,9 @@
                 "sebastian/type": "^2.3",
                 "sebastian/version": "^3.0.2"
             },
+            "bin": [
+                "phpunit"
+            ],
             "type": "library",
             "autoload": {
                 "classmap": [
