@@ -21,7 +21,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 
 ## Example
 <details>
-    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.0.12/composer.lock'>composer.lock</a> has 1542 lines, with the plugin the number is reduced to 719.</summary>
+    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.1.3/composer.lock'>composer.lock</a> has 1612 lines, with the plugin the number is reduced to 882.</summary>
 
 ```diff
  {
@@ -30,22 +30,22 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
-     "content-hash": "9b94ece2895724239b36aec399e5321a",
+     "content-hash": "bff3f5b355e45125612dff36a8f71737",
      "packages": [
          {
              "name": "composer/ca-bundle",
-             "version": "1.2.9",
+             "version": "1.2.10",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/ca-bundle.git",
-                 "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5"
+                 "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
--                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
+-                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
 -                "shasum": ""
-+                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5"
++                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
              },
              "require": {
                  "ext-openssl": "*",
@@ -59,11 +59,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-main": "1.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "1.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Composer\\CaBundle\\": "src"
@@ -91,7 +91,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/ca-bundle/issues",
--                "source": "https://github.com/composer/ca-bundle/tree/1.2.9"
+-                "source": "https://github.com/composer/ca-bundle/tree/1.2.10"
 -            },
 -            "funding": [
 -                {
@@ -107,23 +107,94 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2021-01-12T12:10:35+00:00"
+-            "time": "2021-06-07T13:58:28+00:00"
 +            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle."
          },
          {
-             "name": "composer/semver",
-             "version": "3.2.4",
+             "name": "composer/metadata-minifier",
+             "version": "1.0.0",
              "source": {
                  "type": "git",
-                 "url": "https://github.com/composer/semver.git",
-                 "reference": "a02fdf930a3c1c3ed3a49b5f63859c0c20e10464"
+                 "url": "https://github.com/composer/metadata-minifier.git",
+                 "reference": "c549d23829536f0d0e984aaabbf02af91f443207"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/semver/zipball/a02fdf930a3c1c3ed3a49b5f63859c0c20e10464",
--                "reference": "a02fdf930a3c1c3ed3a49b5f63859c0c20e10464",
+                 "url": "https://api.github.com/repos/composer/metadata-minifier/zipball/c549d23829536f0d0e984aaabbf02af91f443207",
+-                "reference": "c549d23829536f0d0e984aaabbf02af91f443207",
 -                "shasum": ""
-+                "reference": "a02fdf930a3c1c3ed3a49b5f63859c0c20e10464"
++                "reference": "c549d23829536f0d0e984aaabbf02af91f443207"
+             },
+             "require": {
+                 "php": "^5.3.2 || ^7.0 || ^8.0"
+             },
+-            "require-dev": {
+-                "composer/composer": "^2",
+-                "phpstan/phpstan": "^0.12.55",
+-                "symfony/phpunit-bridge": "^4.2 || ^5"
+-            },
+             "type": "library",
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "1.x-dev"
+                 }
+             },
+             "autoload": {
+                 "psr-4": {
+                     "Composer\\MetadataMinifier\\": "src"
+                 }
+             },
+-            "notification-url": "https://packagist.org/downloads/",
+             "license": [
+                 "MIT"
+             ],
+-            "authors": [
+-                {
+-                    "name": "Jordi Boggiano",
+-                    "email": "j.boggiano@seld.be",
+-                    "homepage": "http://seld.be"
+-                }
+-            ],
+-            "description": "Small utility library that handles metadata minification and expansion.",
+-            "keywords": [
+-                "composer",
+-                "compression"
+-            ],
+-            "support": {
+-                "issues": "https://github.com/composer/metadata-minifier/issues",
+-                "source": "https://github.com/composer/metadata-minifier/tree/1.0.0"
+-            },
+-            "funding": [
+-                {
+-                    "url": "https://packagist.com",
+-                    "type": "custom"
+-                },
+-                {
+-                    "url": "https://github.com/composer",
+-                    "type": "github"
+-                },
+-                {
+-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+-                    "type": "tidelift"
+-                }
+-            ],
+-            "time": "2021-04-07T13:37:33+00:00"
++            "description": "Small utility library that handles metadata minification and expansion."
+         },
+         {
+             "name": "composer/semver",
+             "version": "3.2.5",
+             "source": {
+                 "type": "git",
+                 "url": "https://github.com/composer/semver.git",
+                 "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9"
+             },
+             "dist": {
+                 "type": "zip",
+                 "url": "https://api.github.com/repos/composer/semver/zipball/31f3ea725711245195f62e54ffa402d8ef2fdba9",
+-                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9",
+-                "shasum": ""
++                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9"
              },
              "require": {
                  "php": "^5.3.2 || ^7.0 || ^8.0"
@@ -133,11 +204,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "symfony/phpunit-bridge": "^4.2 || ^5"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-main": "3.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "3.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Composer\\Semver\\": "src"
@@ -174,7 +245,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/semver/issues",
--                "source": "https://github.com/composer/semver/tree/3.2.4"
+-                "source": "https://github.com/composer/semver/tree/3.2.5"
 -            },
 -            "funding": [
 -                {
@@ -190,7 +261,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2020-11-13T08:59:24+00:00"
+-            "time": "2021-05-24T12:41:47+00:00"
 +            "description": "Semver library that offers utilities, version constraint parsing and validation."
          },
          {
@@ -215,11 +286,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-main": "1.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "1.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Composer\\Spdx\\": "src"
@@ -276,25 +347,26 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "composer/xdebug-handler",
-             "version": "1.4.5",
+             "version": "2.0.1",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/xdebug-handler.git",
-                 "reference": "f28d44c286812c714741478d968104c5e604a1d4"
+                 "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
--                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
+                 "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
+-                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
 -                "shasum": ""
-+                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
++                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496"
              },
              "require": {
                  "php": "^5.3.2 || ^7.0 || ^8.0",
                  "psr/log": "^1.0"
              },
 -            "require-dev": {
--                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+-                "phpstan/phpstan": "^0.12.55",
+-                "symfony/phpunit-bridge": "^4.2 || ^5"
 -            },
              "type": "library",
              "autoload": {
@@ -320,7 +392,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/xdebug-handler/issues",
--                "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
+-                "source": "https://github.com/composer/xdebug-handler/tree/2.0.1"
 -            },
 -            "funding": [
 -                {
@@ -336,7 +408,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2020-11-13T08:04:11+00:00"
+-            "time": "2021-05-05T19:37:51+00:00"
 +            "description": "Restarts a process without Xdebug."
          },
          {
@@ -362,15 +434,15 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "json-schema/json-schema-test-suite": "1.2.0",
 -                "phpunit/phpunit": "^4.8.35"
 -            },
--            "bin": [
--                "bin/validate-json"
--            ],
+             "bin": [
+                 "bin/validate-json"
+             ],
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "5.0.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "5.0.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "JsonSchema\\": "src/JsonSchema/"
@@ -413,28 +485,28 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "psr/log",
-             "version": "1.1.3",
+             "version": "1.1.4",
              "source": {
                  "type": "git",
                  "url": "https://github.com/php-fig/log.git",
-                 "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+                 "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
--                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                 "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
 -                "shasum": ""
-+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
++                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
              },
              "require": {
                  "php": ">=5.3.0"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.1.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.1.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Psr\\Log\\": "Psr/Log/"
@@ -447,7 +519,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "authors": [
 -                {
 -                    "name": "PHP-FIG",
--                    "homepage": "http://www.php-fig.org/"
+-                    "homepage": "https://www.php-fig.org/"
 -                }
 -            ],
 -            "description": "Common interface for logging libraries",
@@ -458,9 +530,9 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "psr-3"
 -            ],
 -            "support": {
--                "source": "https://github.com/php-fig/log/tree/1.1.3"
+-                "source": "https://github.com/php-fig/log/tree/1.1.4"
 -            },
--            "time": "2020-03-23T09:12:05+00:00"
+-            "time": "2021-05-03T11:20:27+00:00"
 +            "description": "Common interface for logging libraries"
          },
          {
@@ -482,11 +554,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "php": ">=5.3.3"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.1-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.1-dev"
+                 }
+             },
              "autoload": {
                  "psr-0": {
                      "React\\Promise": "src/"
@@ -534,9 +606,9 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "require-dev": {
 -                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
 -            },
--            "bin": [
--                "bin/jsonlint"
--            ],
+             "bin": [
+                 "bin/jsonlint"
+             ],
              "type": "library",
              "autoload": {
                  "psr-4": {
@@ -597,11 +669,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "php": ">=5.3"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Seld\\PharUtils\\": "src/"
@@ -659,11 +731,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "symfony/process": ""
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.8-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.8-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Component\\Console\\": ""
@@ -721,11 +793,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "symfony/http-kernel": "~2.3.24|~2.5.9|^2.6.2|~3.0.0"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.8-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.8-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Component\\Debug\\": ""
@@ -776,11 +848,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "symfony/polyfill-ctype": "~1.8"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.8-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.8-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Component\\Filesystem\\": ""
@@ -830,11 +902,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "php": ">=5.3.9"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.8-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.8-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Component\\Finder\\": ""
@@ -887,15 +959,15 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "ext-ctype": "For best performance"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-main": "1.19-dev"
--                },
--                "thanks": {
--                    "name": "symfony/polyfill",
--                    "url": "https://github.com/symfony/polyfill"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "1.19-dev"
+                 },
+                 "thanks": {
+                     "name": "symfony/polyfill",
+                     "url": "https://github.com/symfony/polyfill"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Polyfill\\Ctype\\": ""
@@ -968,15 +1040,15 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "ext-mbstring": "For best performance"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-main": "1.19-dev"
--                },
--                "thanks": {
--                    "name": "symfony/polyfill",
--                    "url": "https://github.com/symfony/polyfill"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-main": "1.19-dev"
+                 },
+                 "thanks": {
+                     "name": "symfony/polyfill",
+                     "url": "https://github.com/symfony/polyfill"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Polyfill\\Mbstring\\": ""
@@ -1047,11 +1119,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "php": ">=5.3.9"
              },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.8-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.8-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Symfony\\Component\\Process\\": ""
@@ -1110,11 +1182,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "squizlabs/php_codesniffer": "~2.0"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.0.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.0.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -1170,11 +1242,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "erusev/parsedown": "~1.0"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.0.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.0.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-0": {
                      "phpDocumentor": [
@@ -1226,11 +1298,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.10.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.10.x-dev"
+                 }
+             },
              "autoload": {
                  "psr-4": {
                      "Prophecy\\": "src/Prophecy"
@@ -1292,11 +1364,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "~4.4"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.2.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.2.x-dev"
+                 }
+             },
              "autoload": {
                  "classmap": [
                      "src/"
@@ -1360,11 +1432,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "1.4-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "1.4-dev"
+                 }
+             },
              "autoload": {
                  "classmap": [
                      "src/"
@@ -1420,11 +1492,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "~4.4"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.0.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.0.x-dev"
+                 }
+             },
              "autoload": {
                  "classmap": [
                      "src/"
@@ -1491,11 +1563,11 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpunit/phpunit": "~4.4"
 -            },
              "type": "library",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "2.0.x-dev"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "2.0.x-dev"
+                 }
+             },
              "autoload": {
                  "classmap": [
                      "src/"
@@ -1552,19 +1624,19 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "suggest": {
 -                "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
 -            },
--            "bin": [
--                "bin/simple-phpunit"
--            ],
+             "bin": [
+                 "bin/simple-phpunit"
+             ],
              "type": "symfony-bridge",
--            "extra": {
--                "branch-alias": {
--                    "dev-master": "4.2-dev"
--                },
--                "thanks": {
--                    "name": "phpunit/phpunit",
--                    "url": "https://github.com/sebastianbergmann/phpunit"
--                }
--            },
+             "extra": {
+                 "branch-alias": {
+                     "dev-master": "4.2-dev"
+                 },
+                 "thanks": {
+                     "name": "phpunit/phpunit",
+                     "url": "https://github.com/sebastianbergmann/phpunit"
+                 }
+             },
              "autoload": {
                  "files": [
                      "bootstrap.php"
@@ -1611,7 +1683,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
      "platform-overrides": {
          "php": "5.3.9"
      },
-     "plugin-api-version": "2.0.0"
+     "plugin-api-version": "2.1.0"
  }
 ```
 </details>

@@ -23,6 +23,11 @@
                 "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Composer\\Semver\\": "src"
@@ -107,6 +112,11 @@
                 "php": "^7.2 || ^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
@@ -246,6 +256,11 @@
                 "php": ">=7.2.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Psr\\EventDispatcher\\": "src/"
@@ -273,6 +288,11 @@
                 "php": ">=5.3.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Log\\": "Psr/Log/"
@@ -338,6 +358,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
             "autoload": {
                 "files": [
                     "function.php"
@@ -403,6 +432,15 @@
                 "psr/event-dispatcher": "^1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\EventDispatcher\\": ""
@@ -524,6 +562,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Ctype\\": ""
@@ -554,6 +601,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
@@ -584,6 +640,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
@@ -617,6 +682,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Mbstring\\": ""
@@ -647,6 +721,15 @@
                 "php": ">=7.1"
             },
             "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -669,6 +752,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Php72\\": ""
@@ -699,6 +791,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Php73\\": ""
@@ -732,6 +833,15 @@
                 "php": ">=7.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Polyfill\\Php80\\": ""
@@ -797,6 +907,15 @@
                 "psr/container": "^1.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.4-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\Service\\": ""
@@ -959,6 +1078,11 @@
                 "bin/php-parse"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.9-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "PhpParser\\": "lib/PhpParser"
@@ -990,6 +1114,11 @@
                 "php": "^7.2 || ^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1044,6 +1173,11 @@
                 "php": "^7.2 || ^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": "src/"
@@ -1075,6 +1209,11 @@
                 "webmozart/assert": "^1.9.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": "src"
@@ -1103,6 +1242,11 @@
                 "phpdocumentor/reflection-common": "^2.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "phpDocumentor\\Reflection\\": "src"
@@ -1134,6 +1278,11 @@
                 "sebastian/recursion-context": "^3.0 || ^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.11.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Prophecy\\": "src/Prophecy"
@@ -1173,6 +1322,11 @@
                 "theseer/tokenizer": "^1.2.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.2-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1200,6 +1354,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1227,6 +1386,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1254,6 +1418,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1281,6 +1450,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1338,6 +1512,11 @@
                 "phpunit"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.5-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1368,6 +1547,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1395,6 +1579,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1422,6 +1611,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1451,6 +1645,11 @@
                 "sebastian/exporter": "^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1479,6 +1678,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1506,6 +1710,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1533,6 +1742,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1561,6 +1775,11 @@
                 "sebastian/recursion-context": "^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1590,6 +1809,11 @@
                 "sebastian/recursion-context": "^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1618,6 +1842,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1647,6 +1876,11 @@
                 "sebastian/recursion-context": "^4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1674,6 +1908,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1701,6 +1940,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1728,6 +1972,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1755,6 +2004,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1782,6 +2036,11 @@
                 "php": ">=7.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "src/"
@@ -1840,6 +2099,11 @@
                 "symfony/polyfill-ctype": "^1.8"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Webmozart\\Assert\\": "src/"

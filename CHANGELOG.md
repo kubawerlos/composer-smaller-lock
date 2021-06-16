@@ -1,5 +1,8 @@
 # CHANGELOG for composer-smaller-lock
 
+## 0.1.4 - *2021-06-16*
+- Do not remove "extra" key
+
 ## 0.1.3 - *2021-06-16*
 - Fix the name of the key from "provides" to "provide"
 
