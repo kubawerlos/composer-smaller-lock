@@ -19,6 +19,7 @@
             "name": "foo/bar-composer-plugin",
             "type": "composer-plugin",
             "extra": {
+                "this_must_be_removed": true,
                 "class": "PluginClass"
             },
             "require": {
@@ -30,6 +31,9 @@
         {
             "name": "foo/bar-not-composer-plugin",
             "type": "library",
+            "extra": {
+                "class": "PluginClass"
+            },
             "version": "1.0.0"
         }
     ]

@@ -3,7 +3,11 @@
         {
             "name": "foo/bar",
             "version": "1.0.0",
-            "type": "library"
+            "type": "library",
+            "extra": {
+                "some_key": "never remove extra section",
+                "other_key": "other value"
+            }
         },
         {
             "name": "foo/baz",
@@ -11,7 +15,8 @@
             "type": "composer-plugin",
             "target-dir": "code",
             "extra": {
-                "class": "Foo\\Baz\\PluginClass"
+                "some_key": "never remove extra section",
+                "other_key": "other value"
             }
         }
     ],

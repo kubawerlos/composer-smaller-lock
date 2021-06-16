@@ -81,12 +81,6 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
             unset($data['dist']['shasum']);
         }
 
-        if ($data['type'] === 'composer-plugin') {
-            $data['extra'] = ['class' => $data['extra']['class']];
-        } else {
-            unset($data['extra']);
-        }
-
         return \array_filter(
             $data,
             static fn ($key) => \in_array($key, self::PROPERTIES_TO_KEEP, true),
