@@ -1,5 +1,8 @@
 # CHANGELOG for composer-smaller-lock
 
+## 0.1.3 - *2021-06-16*
+- Fix the name of the key from "provides" to "provide"
+
 ## 0.1.2 - *2021-06-16*
 - Keep "target-dir" key
 
