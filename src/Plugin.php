@@ -31,7 +31,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         'extra',
         'license',
         'name',
-        'provides',
+        'provide',
         'replace',
         'require',
         'source',
