@@ -109,6 +109,16 @@ final class PluginTest extends TestCase
         }
     }
 
+    public function testsPropertiesToKeepAreSorted(): void
+    {
+        $propertiesToKeep = (new \ReflectionClassConstant(Plugin::class, 'PROPERTIES_TO_KEEP'))->getValue();
+
+        $sortedPropertiesToKeep = $propertiesToKeep;
+        \sort($sortedPropertiesToKeep);
+
+        self::assertSame($sortedPropertiesToKeep, $propertiesToKeep);
+    }
+
     private function getEventMock()
     {
         $configSource = $this->createMock(ConfigSourceInterface::class);
