@@ -35,6 +35,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         'replace',
         'require',
         'source',
+        'target-dir',
         'type',
         'version',
     ];

@@ -9,6 +9,7 @@
             "name": "foo/baz",
             "version": "1.0.0",
             "type": "composer-plugin",
+            "target-dir": "code",
             "extra": {
                 "class": "Foo\\Baz\\PluginClass"
             }

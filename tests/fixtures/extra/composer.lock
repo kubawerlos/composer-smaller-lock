@@ -14,6 +14,7 @@
             "name": "foo/baz",
             "version": "1.0.0",
             "type": "composer-plugin",
+            "target-dir": "code",
             "extra": {
                 "some_key": "remove everything, but 'class' key extra section when type is composer-plugin",
                 "class": "Foo\\Baz\\PluginClass",
