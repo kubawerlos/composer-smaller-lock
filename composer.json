@@ -6,14 +6,10 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
-        "composer-plugin-api": "^2.0.0"
-    },
-    "conflict": {
-        "composer-plugin-api": "<2",
-        "composer/composer": "<2"
+        "composer-plugin-api": "^2.0.12"
     },
     "require-dev": {
-        "composer/composer": "^2.0.0",
+        "composer/composer": "^2.0.12",
         "mikey179/vfsstream": "^1.6.8",
         "phpunit/phpunit": "^9.5.4"
     },
