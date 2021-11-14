@@ -64,7 +64,11 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
     {
         $composerLockPath = \substr($event->getComposer()->getConfig()->getConfigSource()->getName(), 0, -4) . 'lock';
 
-        $composerLockData = \json_decode(\file_get_contents($composerLockPath), true);
+        /** @var string $composerLockContent */
+        $composerLockContent = \file_get_contents($composerLockPath);
+
+        /** @var array<string, array<string, array<array<string>>>> $composerLockData */
+        $composerLockData = \json_decode($composerLockContent, true);
 
         foreach (['packages', 'packages-dev'] as $section) {
             foreach (\array_keys($composerLockData[$section]) as $package) {
@@ -75,15 +79,20 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         \file_put_contents($composerLockPath, JsonFile::encode($composerLockData) . "\n");
     }
 
-    private static function cleanPackage(array $data)
+    /**
+     * @param array<array<string>> $data
+     *
+     * @return array<array<string>>
+     */
+    private static function cleanPackage(array $data): array
     {
-        if (empty($data['dist']['shasum'])) {
+        if (isset($data['dist']['shasum']) && $data['dist']['shasum'] === '') {
             unset($data['dist']['shasum']);
         }
 
         return \array_filter(
             $data,
-            static fn ($key) => \in_array($key, self::PROPERTIES_TO_KEEP, true),
+            static fn (string $key) => \in_array($key, self::PROPERTIES_TO_KEEP, true),
             \ARRAY_FILTER_USE_KEY
         );
     }

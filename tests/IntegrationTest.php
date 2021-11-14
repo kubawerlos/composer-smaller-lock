@@ -24,7 +24,7 @@ use Symfony\Component\Process\Process;
  */
 final class IntegrationTest extends TestCase
 {
-    private const TEST_DIR = __DIR__ . '/_tmp/';
+    private const TEST_DIR = __DIR__ . '/.tmp/';
 
     public static function setUpBeforeClass(): void
     {

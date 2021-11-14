@@ -14,7 +14,6 @@
     },
     "require-dev": {
         "composer/composer": "^2.0.0",
-        "kubawerlos/php-cs-fixer-config": "^1.10.0",
         "mikey179/vfsstream": "^1.6.8",
         "phpunit/phpunit": "^9.5.4"
     },
@@ -30,5 +29,25 @@
         "psr-4": {
             "Tests\\": "./tests"
         }
+    },
+    "scripts": {
+        "analyse": [
+            "@install-dev-tools",
+            "@composer --working-dir=.dev-tools analyse"
+        ],
+        "fix": [
+            "@install-dev-tools",
+            "@composer --working-dir=.dev-tools fix"
+        ],
+        "install-dev-tools": [
+            "@composer --working-dir=.dev-tools --quiet install"
+        ],
+        "test": [
+            "phpunit"
+        ],
+        "verify": [
+            "@analyse",
+            "@test"
+        ]
     }
 }
