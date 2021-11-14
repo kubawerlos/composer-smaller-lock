@@ -3,8 +3,6 @@
          xsi:noNamespaceSchemaLocation='./vendor/squizlabs/php_codesniffer/phpcs.xsd'
 >
 
-    <description>Ruleset used in the project</description>
-
     <file>.php-cs-fixer.php</file>
     <file>../src</file>
     <file>../tests</file>

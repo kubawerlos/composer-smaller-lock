@@ -4,7 +4,6 @@ parameters:
   level: max
   paths:
     - ../src
-  reportMaybesInPropertyPhpDocTypes: false
 
 includes:
   - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
