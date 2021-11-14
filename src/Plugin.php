@@ -91,7 +91,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
 
         return \array_filter(
             $data,
-            static fn (string $key) => \in_array($key, self::PROPERTIES_TO_KEEP, true),
+            static fn (string $key): bool => \in_array($key, self::PROPERTIES_TO_KEEP, true),
             \ARRAY_FILTER_USE_KEY
         );
     }
