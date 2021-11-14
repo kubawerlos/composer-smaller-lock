@@ -19,10 +19,10 @@
         "analyse": [
             "./check_file_permissions.sh",
             "./check_trailing_whitespaces.sh",
-            "composer validate --strict --working-dir=..",
-            "composer normalize --dry-run ../composer.json",
-            "composer normalize --dry-run",
-            "composer-require-checker --config-file=composer-require-checker.json check ../composer.json",
+            "@composer validate --strict --working-dir=..",
+            "@composer normalize --dry-run ../composer.json",
+            "@composer normalize --dry-run",
+            "@composer-require-checker --config-file=composer-require-checker.json check ../composer.json",
             "phpcs",
             "php-cs-fixer fix --ansi --diff --dry-run --verbose",
             "types-checker --autoloader=../vendor/autoload.php ../src ../tests",
@@ -31,8 +31,9 @@
             "psalm --no-progress --shepherd"
         ],
         "fix": [
-            "composer normalize ../composer.json",
-            "composer normalize",
+            "@composer normalize ../composer.json",
+            "@composer normalize",
+            "@php generate_readme.php",
             "phpcbf || return 0",
             "php-cs-fixer fix --ansi --verbose || return 0"
         ]
