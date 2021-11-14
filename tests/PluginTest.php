@@ -95,7 +95,6 @@ final class PluginTest extends TestCase
 
         Plugin::clean($this->getEventMock());
 
-        file_put_contents(__DIR__ . "/fixtures/{$fixture}/expected.composer.lock", file_get_contents($this->root->url() . '/composer.lock'));
         self::assertFileEquals(
             __DIR__ . "/fixtures/{$fixture}/expected.composer.lock",
             $this->root->url() . '/composer.lock'
@@ -120,7 +119,7 @@ final class PluginTest extends TestCase
         self::assertSame($sortedPropertiesToKeep, $propertiesToKeep);
     }
 
-    private function getEventMock()
+    private function getEventMock(): Event
     {
         $configSource = $this->createMock(ConfigSourceInterface::class);
         $configSource->method('getName')->willReturn($this->root->url() . '/composer.lock');

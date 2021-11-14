@@ -21,7 +21,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 
 ## Example
 <details>
-    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.1.3/composer.lock'>composer.lock</a> has 1612 lines, with the plugin the number is reduced to 882.</summary>
+    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.1.12/composer.lock'>composer.lock</a> has 1612 lines, with the plugin the number is reduced to 882.</summary>
 
 ```diff
  {
@@ -30,22 +30,22 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
-     "content-hash": "bff3f5b355e45125612dff36a8f71737",
+     "content-hash": "d3dfd8964a34240eba83383a25e2f1fb",
      "packages": [
          {
              "name": "composer/ca-bundle",
-             "version": "1.2.10",
+             "version": "1.3.1",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/ca-bundle.git",
-                 "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
+                 "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
--                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
+                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
+-                "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b",
 -                "shasum": ""
-+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
++                "reference": "4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b"
              },
              "require": {
                  "ext-openssl": "*",
@@ -56,7 +56,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "phpstan/phpstan": "^0.12.55",
 -                "psr/log": "^1.0",
 -                "symfony/phpunit-bridge": "^4.2 || ^5",
--                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+-                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
 -            },
              "type": "library",
              "extra": {
@@ -91,7 +91,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/ca-bundle/issues",
--                "source": "https://github.com/composer/ca-bundle/tree/1.2.10"
+-                "source": "https://github.com/composer/ca-bundle/tree/1.3.1"
 -            },
 -            "funding": [
 -                {
@@ -107,7 +107,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2021-06-07T13:58:28+00:00"
+-            "time": "2021-10-28T20:44:15+00:00"
 +            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle."
          },
          {
@@ -183,18 +183,18 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "composer/semver",
-             "version": "3.2.5",
+             "version": "3.2.6",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/semver.git",
-                 "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9"
+                 "reference": "83e511e247de329283478496f7a1e114c9517506"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/semver/zipball/31f3ea725711245195f62e54ffa402d8ef2fdba9",
--                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9",
+                 "url": "https://api.github.com/repos/composer/semver/zipball/83e511e247de329283478496f7a1e114c9517506",
+-                "reference": "83e511e247de329283478496f7a1e114c9517506",
 -                "shasum": ""
-+                "reference": "31f3ea725711245195f62e54ffa402d8ef2fdba9"
++                "reference": "83e511e247de329283478496f7a1e114c9517506"
              },
              "require": {
                  "php": "^5.3.2 || ^7.0 || ^8.0"
@@ -245,7 +245,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/semver/issues",
--                "source": "https://github.com/composer/semver/tree/3.2.5"
+-                "source": "https://github.com/composer/semver/tree/3.2.6"
 -            },
 -            "funding": [
 -                {
@@ -261,7 +261,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2021-05-24T12:41:47+00:00"
+-            "time": "2021-10-25T11:34:17+00:00"
 +            "description": "Semver library that offers utilities, version constraint parsing and validation."
          },
          {
@@ -347,22 +347,22 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "composer/xdebug-handler",
-             "version": "2.0.1",
+             "version": "2.0.2",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/xdebug-handler.git",
-                 "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496"
+                 "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
--                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496",
+                 "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/84674dd3a7575ba617f5a76d7e9e29a7d3891339",
+-                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339",
 -                "shasum": ""
-+                "reference": "964adcdd3a28bf9ed5d9ac6450064e0d71ed7496"
++                "reference": "84674dd3a7575ba617f5a76d7e9e29a7d3891339"
              },
              "require": {
                  "php": "^5.3.2 || ^7.0 || ^8.0",
-                 "psr/log": "^1.0"
+                 "psr/log": "^1 || ^2 || ^3"
              },
 -            "require-dev": {
 -                "phpstan/phpstan": "^0.12.55",
@@ -392,7 +392,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/xdebug-handler/issues",
--                "source": "https://github.com/composer/xdebug-handler/tree/2.0.1"
+-                "source": "https://github.com/composer/xdebug-handler/tree/2.0.2"
 -            },
 -            "funding": [
 -                {
@@ -408,23 +408,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2021-05-05T19:37:51+00:00"
+-            "time": "2021-07-31T17:03:58+00:00"
 +            "description": "Restarts a process without Xdebug."
          },
          {
              "name": "justinrainbow/json-schema",
-             "version": "5.2.10",
+             "version": "5.2.11",
              "source": {
                  "type": "git",
                  "url": "https://github.com/justinrainbow/json-schema.git",
-                 "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b"
+                 "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
--                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
+                 "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ab6744b7296ded80f8cc4f9509abbff393399aa",
+-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa",
 -                "shasum": ""
-+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b"
++                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa"
              },
              "require": {
                  "php": ">=5.3.3"
@@ -478,9 +478,9 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/justinrainbow/json-schema/issues",
--                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.10"
+-                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.11"
 -            },
--            "time": "2020-05-27T16:41:55+00:00"
+-            "time": "2021-07-22T09:24:00+00:00"
 +            "description": "A library to validate a json schema."
          },
          {
@@ -652,18 +652,18 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "seld/phar-utils",
-             "version": "1.1.1",
+             "version": "1.1.2",
              "source": {
                  "type": "git",
                  "url": "https://github.com/Seldaek/phar-utils.git",
-                 "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796"
+                 "reference": "749042a2315705d2dfbbc59234dd9ceb22bf3ff0"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
--                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                 "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/749042a2315705d2dfbbc59234dd9ceb22bf3ff0",
+-                "reference": "749042a2315705d2dfbbc59234dd9ceb22bf3ff0",
 -                "shasum": ""
-+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796"
++                "reference": "749042a2315705d2dfbbc59234dd9ceb22bf3ff0"
              },
              "require": {
                  "php": ">=5.3"
@@ -695,9 +695,9 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/Seldaek/phar-utils/issues",
--                "source": "https://github.com/Seldaek/phar-utils/tree/master"
+-                "source": "https://github.com/Seldaek/phar-utils/tree/1.1.2"
 -            },
--            "time": "2020-07-07T18:42:57+00:00"
+-            "time": "2021-08-19T21:01:38+00:00"
 +            "description": "PHAR file format utilities, for when PHP phars you up"
          },
          {

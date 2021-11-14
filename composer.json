@@ -6,15 +6,10 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
-        "composer-plugin-api": "^2.0.0"
-    },
-    "conflict": {
-        "composer-plugin-api": "<2",
-        "composer/composer": "<2"
+        "composer-plugin-api": "^2.0.12"
     },
     "require-dev": {
-        "composer/composer": "^2.0.0",
-        "kubawerlos/php-cs-fixer-config": "^1.10.0",
+        "composer/composer": "^2.0.12",
         "mikey179/vfsstream": "^1.6.8",
         "phpunit/phpunit": "^9.5.4"
     },
@@ -30,5 +25,25 @@
         "psr-4": {
             "Tests\\": "./tests"
         }
+    },
+    "scripts": {
+        "analyse": [
+            "@install-dev-tools",
+            "@composer --working-dir=.dev-tools analyse"
+        ],
+        "fix": [
+            "@install-dev-tools",
+            "@composer --working-dir=.dev-tools fix"
+        ],
+        "install-dev-tools": [
+            "@composer --working-dir=.dev-tools --quiet install"
+        ],
+        "test": [
+            "phpunit"
+        ],
+        "verify": [
+            "@analyse",
+            "@test"
+        ]
     }
 }

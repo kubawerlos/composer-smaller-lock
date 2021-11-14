@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+
+<psalm xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xmlns='https://getpsalm.org/schema/config'
+       xsi:schemaLocation='https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd'
+       allowStringToStandInForClass='true'
+       autoloader='../vendor/autoload.php'
+       findUnusedCode='true'
+       findUnusedVariablesAndParams='true'
+       strictBinaryOperands='true'
+       totallyTyped='true'
+       usePhpDocMethodsWithoutMagicCall='true'
+>
+    <projectFiles>
+        <directory name='../src' />
+    </projectFiles>
+
+    <issueHandlers>
+        <UnusedClass errorLevel='suppress' />
+    </issueHandlers>
+</psalm>
