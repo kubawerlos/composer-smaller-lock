@@ -51,13 +51,13 @@ final class IntegrationTest extends TestCase
         $repositories = ['type' => 'path', 'url' => __DIR__ . '/..', 'options' => ['symlink' => false]];
         $this->runCommand(\sprintf('composer require %s --no-interaction --no-update', $package), $directory);
         $this->runCommand(\sprintf('composer config repositories.self "%s"', \str_replace('"', '\\"', \json_encode($repositories, \JSON_UNESCAPED_SLASHES))), $directory);
-        $this->runCommand('composer require kubawerlos/composer-smaller-lock:*@dev', $directory);
+        $this->runCommand('composer require kubawerlos/composer-smaller-lock:*@dev --ignore-platform-reqs --no-plugins', $directory);
 
         $originalDependencies = $this->runCommand('composer show', $directory);
         $originalLicenses = $this->runCommand('composer licenses', $directory);
 
         $this->runCommand('rm -fr ./vendor', $directory);
-        $this->runCommand('composer install', $directory);
+        $this->runCommand('composer install --ignore-platform-reqs', $directory);
         $afterRunningPluginDependencies = $this->runCommand('composer show', $directory);
         $afterRunningPluginLicenses = $this->runCommand('composer licenses', $directory);
 
