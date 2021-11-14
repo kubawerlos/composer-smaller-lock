@@ -56,8 +56,13 @@ final class IntegrationTest extends TestCase
         $originalDependencies = $this->runCommand('composer show', $directory);
         $originalLicenses = $this->runCommand('composer licenses', $directory);
 
+        // update composer.lock with the plugin
+        $this->runCommand('composer update --ignore-platform-reqs --lock', $directory);
+
+        // install dependencies from updated composer.lock
         $this->runCommand('rm -fr ./vendor', $directory);
         $this->runCommand('composer install --ignore-platform-reqs', $directory);
+
         $afterRunningPluginDependencies = $this->runCommand('composer show', $directory);
         $afterRunningPluginLicenses = $this->runCommand('composer licenses', $directory);
 

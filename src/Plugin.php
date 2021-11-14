@@ -55,7 +55,6 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            ScriptEvents::POST_AUTOLOAD_DUMP => 'clean',
             ScriptEvents::POST_UPDATE_CMD => 'clean',
         ];
     }
