@@ -1,6 +1,7 @@
 {
     "require": {
         "composer/composer": "^2.1.12",
+        "ergebnis/composer-normalize": "^2.15.0",
         "kubawerlos/composer-smaller-lock": "^0.1.4",
         "kubawerlos/php-cs-fixer-config": "^3.2.0",
         "kubawerlos/types-checker": "^2.1.0",
