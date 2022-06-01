@@ -23,13 +23,6 @@
             "Tests\\": "./tests"
         }
     },
-    "config": {
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true,
-            "kubawerlos/composer-smaller-lock": true,
-            "phpstan/extension-installer": true
-        }
-    },
     "extra": {
         "class": "ComposerSmallerLock\\Plugin"
     },
