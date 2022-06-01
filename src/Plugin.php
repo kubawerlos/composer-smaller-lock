@@ -61,8 +61,8 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
     {
         $composerLockPath = \substr($event->getComposer()->getConfig()->getConfigSource()->getName(), 0, -4) . 'lock';
 
-        /** @var string $composerLockContent */
         $composerLockContent = \file_get_contents($composerLockPath);
+        \assert(\is_string($composerLockContent));
 
         /** @var array<string, array<string, array<array<string>>>> $composerLockData */
         $composerLockData = \json_decode($composerLockContent, true);
@@ -83,14 +83,14 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
      */
     private static function cleanPackage(array $data): array
     {
-        if (isset($data['dist']['shasum']) && $data['dist']['shasum'] === '') {
+        if (\array_key_exists('dist', $data) && \array_key_exists('shasum', $data['dist']) && $data['dist']['shasum'] === '') {
             unset($data['dist']['shasum']);
         }
 
         return \array_filter(
             $data,
             static fn (string $key): bool => \in_array($key, self::PROPERTIES_TO_KEEP, true),
-            \ARRAY_FILTER_USE_KEY
+            \ARRAY_FILTER_USE_KEY,
         );
     }
 }

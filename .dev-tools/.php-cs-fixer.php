@@ -9,6 +9,8 @@
  * the LICENSE file that was distributed with this source code.
  */
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 return PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
     ->setFinder(
@@ -19,5 +21,5 @@ return PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba
             ->append([
                 __DIR__ . '/generate_readme.php',
                 __FILE__,
-            ])
+            ]),
     );

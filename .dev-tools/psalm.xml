@@ -5,10 +5,10 @@
        xsi:schemaLocation='https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd'
        allowStringToStandInForClass='true'
        autoloader='../vendor/autoload.php'
+       errorLevel='1'
        findUnusedCode='true'
        findUnusedVariablesAndParams='true'
        strictBinaryOperands='true'
-       totallyTyped='true'
        usePhpDocMethodsWithoutMagicCall='true'
 >
     <projectFiles>

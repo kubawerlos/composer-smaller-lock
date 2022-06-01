@@ -95,7 +95,7 @@ final class PluginTest extends TestCase
 
         self::assertFileEquals(
             __DIR__ . "/fixtures/{$fixture}/expected.composer.lock",
-            $this->root->url() . '/composer.lock'
+            $this->root->url() . '/composer.lock',
         );
     }
 

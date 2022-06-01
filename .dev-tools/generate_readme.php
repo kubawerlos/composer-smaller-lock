@@ -1,6 +1,15 @@
 #!/usr/bin/env php
 <?php
 
+/*
+ * This file is part of composer-smaller-lock.
+ *
+ * (c) 2021 Kuba Werłos
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $composerLockPath = __DIR__ . '/vendor/composer/composer/composer.lock';
@@ -68,8 +77,8 @@ function diff(string $from, string $to): string
 
     $diff = $differ->diff($from, $to);
 
-    /** @var int $start */
     $start = strpos($diff, "\n", 10);
+    assert(is_int($start));
 
     return substr($diff, $start + 1, -1);
 }
