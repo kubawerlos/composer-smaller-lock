@@ -1,8 +1,8 @@
 {
     "name": "kubawerlos/composer-smaller-lock",
-    "type": "composer-plugin",
     "description": "Plugin to keep composer.lock smaller and readable",
     "license": "MIT",
+    "type": "composer-plugin",
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
@@ -13,9 +13,6 @@
         "mikey179/vfsstream": "^1.6.8",
         "phpunit/phpunit": "^9.5.4"
     },
-    "extra": {
-        "class": "ComposerSmallerLock\\Plugin"
-    },
     "autoload": {
         "psr-4": {
             "ComposerSmallerLock\\": "./src"
@@ -25,6 +22,16 @@
         "psr-4": {
             "Tests\\": "./tests"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "kubawerlos/composer-smaller-lock": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "class": "ComposerSmallerLock\\Plugin"
     },
     "scripts": {
         "analyse": [
