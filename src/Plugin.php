@@ -27,6 +27,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         'description',
         'dist',
         'extra',
+        'include-path',
         'license',
         'name',
         'provide',
