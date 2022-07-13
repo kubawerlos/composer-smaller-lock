@@ -8,6 +8,7 @@ jobs:
   analyse:
     runs-on: ubuntu-latest
     env:
+      COMPOSER_PROCESS_TIMEOUT: 300
       PHP_CS_FIXER_IGNORE_ENV: 1
     steps:
       - name: Checkout
