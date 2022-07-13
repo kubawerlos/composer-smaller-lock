@@ -5,6 +5,9 @@
             "description": "description",
             "version": "1.0.0",
             "type": "library",
+            "include-path": [
+                "./path"
+            ],
             "license": "MIT",
             "require": {
                 "monolog/monolog": "dev-master"
