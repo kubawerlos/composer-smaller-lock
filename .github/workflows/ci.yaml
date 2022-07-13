@@ -8,7 +8,6 @@ jobs:
   analyse:
     runs-on: ubuntu-latest
     env:
-      COMPOSER_PROCESS_TIMEOUT: 300
       PHP_CS_FIXER_IGNORE_ENV: 1
     steps:
       - name: Checkout
@@ -44,6 +43,9 @@ jobs:
 
     runs-on: ${{ matrix.os }}
 
+    env:
+      COMPOSER_PROCESS_TIMEOUT: 300
+      
     steps:
       - name: Checkout
         uses: actions/checkout@v2
