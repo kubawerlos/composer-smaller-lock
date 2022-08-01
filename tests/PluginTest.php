@@ -14,7 +14,6 @@ namespace Tests;
 use Composer\Composer;
 use Composer\Config;
 use Composer\Config\ConfigSourceInterface;
-use Composer\Console\Application;
 use Composer\IO\IOInterface;
 use Composer\Script\Event;
 use ComposerSmallerLock\Plugin;
@@ -35,32 +34,6 @@ final class PluginTest extends TestCase
     protected function setUp(): void
     {
         $this->root = vfsStream::setup('root');
-    }
-
-    public function testActivatingAndDeactivating(): void
-    {
-        $plugin = new Plugin();
-
-        $application = new Application();
-        $composer = $application->getComposer(true, true);
-        $pluginManager = $composer->getPluginManager();
-
-        self::assertEmpty($pluginManager->getPlugins());
-
-        $pluginManager->addPlugin($plugin);
-        self::assertCount(1, $pluginManager->getPlugins());
-        self::assertContainsOnlyInstancesOf(Plugin::class, $pluginManager->getPlugins());
-
-        if (\method_exists($plugin, 'removePlugin')) {
-            $pluginManager->removePlugin($plugin);
-            self::assertEmpty($pluginManager->getPlugins());
-
-            $pluginManager->addPlugin($plugin);
-            self::assertCount(1, $pluginManager->getPlugins());
-            self::assertContainsOnlyInstancesOf(Plugin::class, $pluginManager->getPlugins());
-
-            $pluginManager->uninstallPlugin($plugin);
-        }
     }
 
     /**
