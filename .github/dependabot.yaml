@@ -1,0 +1,12 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'composer'
+    directory: '/.dev-tools'
+    schedule:
+      interval: 'monthly'
+    labels:
+      - 'dependencies'
+    reviewers:
+      - 'kubawerlos'
+    versioning-strategy: 'increase'
