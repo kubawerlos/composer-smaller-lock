@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3dfe728ee99a797c6a1bb53fdf69d91",
+    "content-hash": "a75d4d12cfc1282a84c941bb25114587",
     "packages": [
         {
             "name": "amphp/amp",
@@ -80,16 +80,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "69098eca243998b53eed7a48d82dedd28b447cd5"
+                "reference": "74780ccf8c19d6acb8d65c5f39cd72110e132bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/69098eca243998b53eed7a48d82dedd28b447cd5",
-                "reference": "69098eca243998b53eed7a48d82dedd28b447cd5"
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/74780ccf8c19d6acb8d65c5f39cd72110e132bbd",
+                "reference": "74780ccf8c19d6acb8d65c5f39cd72110e132bbd"
             },
             "require": {
                 "ext-openssl": "*",
@@ -148,22 +148,22 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.4.4",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "e8d9087229bcdbc5867594d3098091412f1130cf"
+                "reference": "923278ad13e1621946eb76ab2882655d2cc396a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/e8d9087229bcdbc5867594d3098091412f1130cf",
-                "reference": "e8d9087229bcdbc5867594d3098091412f1130cf"
+                "url": "https://api.github.com/repos/composer/composer/zipball/923278ad13e1621946eb76ab2882655d2cc396a4",
+                "reference": "923278ad13e1621946eb76ab2882655d2cc396a4"
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
                 "composer/class-map-generator": "^1.0",
                 "composer/metadata-minifier": "^1.0",
-                "composer/pcre": "^2 || ^3",
+                "composer/pcre": "^2.1 || ^3.1",
                 "composer/semver": "^3.0",
                 "composer/spdx-licenses": "^1.5.7",
                 "composer/xdebug-handler": "^2.0.2 || ^3.0.3",
@@ -179,6 +179,7 @@
                 "symfony/finder": "^5.4 || ^6.0",
                 "symfony/polyfill-php73": "^1.24",
                 "symfony/polyfill-php80": "^1.24",
+                "symfony/polyfill-php81": "^1.24",
                 "symfony/process": "^5.4 || ^6.0"
             },
             "bin": [
@@ -187,7 +188,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.4-dev"
+                    "dev-main": "2.5-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -622,6 +623,33 @@
             "description": "PHP classes for the Language Server Protocol"
         },
         {
+            "name": "fidry/cpu-core-counter",
+            "version": "0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theofidry/cpu-core-counter.git",
+                "reference": "79261cc280aded96d098e1b0e0ba0c4881b432c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theofidry/cpu-core-counter/zipball/79261cc280aded96d098e1b0e0ba0c4881b432c2",
+                "reference": "79261cc280aded96d098e1b0e0ba0c4881b432c2"
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fidry\\CpuCoreCounter\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Tiny utility to get the number of CPU cores."
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "5.2.12",
             "source": {
@@ -719,20 +747,21 @@
         },
         {
             "name": "kubawerlos/php-cs-fixer-custom-fixers",
-            "version": "v3.11.2",
+            "version": "v3.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kubawerlos/php-cs-fixer-custom-fixers.git",
-                "reference": "b3a7c140ec5400a2772c1e6cdd1852824e415893"
+                "reference": "3f3cce89eb74662d4c6b63e67cdbc42dce596692"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/b3a7c140ec5400a2772c1e6cdd1852824e415893",
-                "reference": "b3a7c140ec5400a2772c1e6cdd1852824e415893"
+                "url": "https://api.github.com/repos/kubawerlos/php-cs-fixer-custom-fixers/zipball/3f3cce89eb74662d4c6b63e67cdbc42dce596692",
+                "reference": "3f3cce89eb74662d4c6b63e67cdbc42dce596692"
             },
             "require": {
                 "ext-filter": "*",
                 "ext-tokenizer": "*",
+                "friendsofphp/php-cs-fixer": "^3.6.0",
                 "php": "^7.4 || ^8.0"
             },
             "type": "library",
@@ -808,25 +837,25 @@
         },
         {
             "name": "maglnet/composer-require-checker",
-            "version": "4.2.0",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maglnet/ComposerRequireChecker.git",
-                "reference": "fb2a69aa2b7307541233536f179275e99451b339"
+                "reference": "5696f5eeac91838cfcb01ef1ce9709f18f2bbbea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maglnet/ComposerRequireChecker/zipball/fb2a69aa2b7307541233536f179275e99451b339",
-                "reference": "fb2a69aa2b7307541233536f179275e99451b339"
+                "url": "https://api.github.com/repos/maglnet/ComposerRequireChecker/zipball/5696f5eeac91838cfcb01ef1ce9709f18f2bbbea",
+                "reference": "5696f5eeac91838cfcb01ef1ce9709f18f2bbbea"
             },
             "require": {
                 "composer-runtime-api": "^2.0.0",
                 "ext-phar": "*",
-                "nikic/php-parser": "^4.13.0",
-                "php": "^8.0",
-                "symfony/console": "^6.0.0",
-                "webmozart/assert": "^1.9.1",
-                "webmozart/glob": "^4.4.0"
+                "nikic/php-parser": "^4.15.2",
+                "php": "~8.1.0 || ~8.2.0",
+                "symfony/console": "^6.2.2",
+                "webmozart/assert": "^1.11.0",
+                "webmozart/glob": "^4.6.0"
             },
             "bin": [
                 "bin/composer-require-checker"
@@ -876,16 +905,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v4.0.0",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d"
+                "reference": "cfa81ea1d35294d64adb9c68aa4cb9e92400e53f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d",
-                "reference": "8bbc021a8edb2e4a7ea2f8ad4fa9ec9dce2fcb8d"
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/cfa81ea1d35294d64adb9c68aa4cb9e92400e53f",
+                "reference": "cfa81ea1d35294d64adb9c68aa4cb9e92400e53f"
             },
             "require": {
                 "ext-json": "*",
@@ -907,16 +936,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.15.2",
+            "version": "v4.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc"
+                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc",
-                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc"
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/570e980a201d8ed0236b0a62ddf2c9cbb2034039",
+                "reference": "570e980a201d8ed0236b0a62ddf2c9cbb2034039"
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -940,33 +969,6 @@
                 "BSD-3-Clause"
             ],
             "description": "A PHP parser written in PHP"
-        },
-        {
-            "name": "openlss/lib-array2xml",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nullivex/lib-array2xml.git",
-                "reference": "a91f18a8dfc69ffabe5f9b068bc39bb202c81d90"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nullivex/lib-array2xml/zipball/a91f18a8dfc69ffabe5f9b068bc39bb202c81d90",
-                "reference": "a91f18a8dfc69ffabe5f9b068bc39bb202c81d90"
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "LSS": ""
-                }
-            },
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Array2XML conversion library credit to lalit.org"
         },
         {
             "name": "pdepend/pdepend",
@@ -1008,16 +1010,16 @@
         },
         {
             "name": "php-cs-fixer/shim",
-            "version": "v3.13.0",
+            "version": "v3.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/shim.git",
-                "reference": "f9fc59f51bfca86066133ff012a9173f3f2b6afc"
+                "reference": "f5097f1228ebb73faba2ced9f802b9575cce939c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/f9fc59f51bfca86066133ff012a9173f3f2b6afc",
-                "reference": "f9fc59f51bfca86066133ff012a9173f3f2b6afc"
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/shim/zipball/f5097f1228ebb73faba2ced9f802b9575cce939c",
+                "reference": "f5097f1228ebb73faba2ced9f802b9575cce939c"
             },
             "require": {
                 "ext-json": "*",
@@ -1028,7 +1030,8 @@
                 "friendsofphp/php-cs-fixer": "self.version"
             },
             "bin": [
-                "php-cs-fixer"
+                "php-cs-fixer",
+                "php-cs-fixer.phar"
             ],
             "type": "application",
             "license": [
@@ -1204,16 +1207,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.9.2",
+            "version": "1.9.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "d6fdf01c53978b6429f1393ba4afeca39cc68afa"
+                "reference": "e5fcc96289cf737304286a9b505fbed091f02e58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d6fdf01c53978b6429f1393ba4afeca39cc68afa",
-                "reference": "d6fdf01c53978b6429f1393ba4afeca39cc68afa"
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e5fcc96289cf737304286a9b505fbed091f02e58",
+                "reference": "e5fcc96289cf737304286a9b505fbed091f02e58"
             },
             "require": {
                 "php": "^7.2|^8.0"
@@ -1235,20 +1238,20 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "1.2.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "dea1f87344c6964c607d9076dee42d891f3923f0"
+                "reference": "54a24bd23e9e80ee918cdc24f909d376c2e273f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/dea1f87344c6964c607d9076dee42d891f3923f0",
-                "reference": "dea1f87344c6964c607d9076dee42d891f3923f0"
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/54a24bd23e9e80ee918cdc24f909d376c2e273f7",
+                "reference": "54a24bd23e9e80ee918cdc24f909d376c2e273f7"
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.8.11"
+                "phpstan/phpstan": "^1.9.3"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -1271,20 +1274,20 @@
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "23e5f377ee6395a1a04842d3d6ed4bd25e7b44a6"
+                "reference": "361f75b06066f3fdaba87c1f57bdb1ffc28d6f1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/23e5f377ee6395a1a04842d3d6ed4bd25e7b44a6",
-                "reference": "23e5f377ee6395a1a04842d3d6ed4bd25e7b44a6"
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/361f75b06066f3fdaba87c1f57bdb1ffc28d6f1d",
+                "reference": "361f75b06066f3fdaba87c1f57bdb1ffc28d6f1d"
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.8.6"
+                "phpstan/phpstan": "^1.9.7"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -1525,6 +1528,34 @@
             "description": "Simple unix signal handler that silently fails where signals are not supported for easy cross-platform development"
         },
         {
+            "name": "spatie/array-to-xml",
+            "version": "2.17.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/array-to-xml.git",
+                "reference": "5cbec9c6ab17e320c58a259f0cebe88bde4a7c46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/array-to-xml/zipball/5cbec9c6ab17e320c58a259f0cebe88bde4a7c46",
+                "reference": "5cbec9c6ab17e320c58a259f0cebe88bde4a7c46"
+            },
+            "require": {
+                "ext-dom": "*",
+                "php": "^7.4|^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ArrayToXml\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Convert an array to xml"
+        },
+        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.7.1",
             "source": {
@@ -1560,16 +1591,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "ebf27792246165a2a0b6b69ec9c620cac8c5a2f0"
+                "reference": "f31b3c78a3650157188a240695e688d6a182aa91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/ebf27792246165a2a0b6b69ec9c620cac8c5a2f0",
-                "reference": "ebf27792246165a2a0b6b69ec9c620cac8c5a2f0"
+                "url": "https://api.github.com/repos/symfony/config/zipball/f31b3c78a3650157188a240695e688d6a182aa91",
+                "reference": "f31b3c78a3650157188a240695e688d6a182aa91"
             },
             "require": {
                 "php": ">=8.1",
@@ -1593,16 +1624,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "75d4749d9620a8fa21a2d2847800a84b5c4e7682"
+                "reference": "3e294254f2191762c1d137aed4b94e966965e985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/75d4749d9620a8fa21a2d2847800a84b5c4e7682",
-                "reference": "75d4749d9620a8fa21a2d2847800a84b5c4e7682"
+                "url": "https://api.github.com/repos/symfony/console/zipball/3e294254f2191762c1d137aed4b94e966965e985",
+                "reference": "3e294254f2191762c1d137aed4b94e966965e985"
             },
             "require": {
                 "php": ">=8.1",
@@ -1630,16 +1661,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v6.2.0",
+            "version": "v6.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "bb328032f400961be5db5aed87fac9742b506f80"
+                "reference": "2a6dd148589b9db59717db8b75f8d9fbb2ae714f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/bb328032f400961be5db5aed87fac9742b506f80",
-                "reference": "bb328032f400961be5db5aed87fac9742b506f80"
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/2a6dd148589b9db59717db8b75f8d9fbb2ae714f",
+                "reference": "2a6dd148589b9db59717db8b75f8d9fbb2ae714f"
             },
             "require": {
                 "php": ">=8.1",
@@ -1668,16 +1699,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.1.1",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918"
+                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918",
-                "reference": "07f1b9cc2ffee6aaafcf4b710fbc38ff736bd918"
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/1ee04c65529dea5d8744774d474e7cbd2f1206d3",
+                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3"
             },
             "require": {
                 "php": ">=8.1"
@@ -1685,7 +1716,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.1-dev"
+                    "dev-main": "3.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1704,16 +1735,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "50b2523c874605cf3d4acf7a9e2b30b6a440a016"
+                "reference": "e59e8a4006afd7f5654786a83b4fcb8da98f4593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/50b2523c874605cf3d4acf7a9e2b30b6a440a016",
-                "reference": "50b2523c874605cf3d4acf7a9e2b30b6a440a016"
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e59e8a4006afd7f5654786a83b4fcb8da98f4593",
+                "reference": "e59e8a4006afd7f5654786a83b4fcb8da98f4593"
             },
             "require": {
                 "php": ">=8.1",
@@ -1736,16 +1767,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "eb2355f69519e4ef33f1835bca4c935f5d42e570"
+                "reference": "c90dc446976a612e3312a97a6ec0069ab0c2099c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/eb2355f69519e4ef33f1835bca4c935f5d42e570",
-                "reference": "eb2355f69519e4ef33f1835bca4c935f5d42e570"
+                "url": "https://api.github.com/repos/symfony/finder/zipball/c90dc446976a612e3312a97a6ec0069ab0c2099c",
+                "reference": "c90dc446976a612e3312a97a6ec0069ab0c2099c"
             },
             "require": {
                 "php": ">=8.1"
@@ -2014,17 +2045,59 @@
             "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions"
         },
         {
-            "name": "symfony/process",
-            "version": "v6.2.0",
+            "name": "symfony/polyfill-php81",
+            "version": "v1.27.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "ba6e55359f8f755fe996c58a81e00eaa67a35877"
+                "url": "https://github.com/symfony/polyfill-php81.git",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/ba6e55359f8f755fe996c58a81e00eaa67a35877",
-                "reference": "ba6e55359f8f755fe996c58a81e00eaa67a35877"
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/707403074c8ea6e2edaf8794b0157a0bfa52157a",
+                "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.27-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php81\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions"
+        },
+        {
+            "name": "symfony/process",
+            "version": "v6.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "9ead139f63dfa38c4e4a9049cc64a8b2748c83b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/9ead139f63dfa38c4e4a9049cc64a8b2748c83b7",
+                "reference": "9ead139f63dfa38c4e4a9049cc64a8b2748c83b7"
             },
             "require": {
                 "php": ">=8.1"
@@ -2045,16 +2118,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v3.1.1",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "925e713fe8fcacf6bc05e936edd8dd5441a21239"
+                "reference": "aac98028c69df04ee77eb69b96b86ee51fbf4b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/925e713fe8fcacf6bc05e936edd8dd5441a21239",
-                "reference": "925e713fe8fcacf6bc05e936edd8dd5441a21239"
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/aac98028c69df04ee77eb69b96b86ee51fbf4b75",
+                "reference": "aac98028c69df04ee77eb69b96b86ee51fbf4b75"
             },
             "require": {
                 "php": ">=8.1",
@@ -2063,7 +2136,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.1-dev"
+                    "dev-main": "3.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -2085,16 +2158,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "145702685e0d12f81d755c71127bfff7582fdd36"
+                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/145702685e0d12f81d755c71127bfff7582fdd36",
-                "reference": "145702685e0d12f81d755c71127bfff7582fdd36"
+                "url": "https://api.github.com/repos/symfony/string/zipball/b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0",
+                "reference": "b2dac0fa27b1ac0f9c0c0b23b43977f12308d0b0"
             },
             "require": {
                 "php": ">=8.1",
@@ -2122,16 +2195,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v6.2.0",
+            "version": "v6.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "0437f26ca0c648071cc15ddacd26152cc65f4cd6"
+                "reference": "108f9c6451eea8e04a7fb83bbacb5b812ef30e35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/0437f26ca0c648071cc15ddacd26152cc65f4cd6",
-                "reference": "0437f26ca0c648071cc15ddacd26152cc65f4cd6"
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/108f9c6451eea8e04a7fb83bbacb5b812ef30e35",
+                "reference": "108f9c6451eea8e04a7fb83bbacb5b812ef30e35"
             },
             "require": {
                 "php": ">=8.1"
@@ -2152,16 +2225,16 @@
         },
         {
             "name": "vimeo/psalm",
-            "version": "5.0.0",
+            "version": "5.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "4e177bf0c9f03c17d2fbfd83b7cc9c47605274d8"
+                "reference": "e784128902dfe01d489c4123d69918a9f3c1eac5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/4e177bf0c9f03c17d2fbfd83b7cc9c47605274d8",
-                "reference": "4e177bf0c9f03c17d2fbfd83b7cc9c47605274d8"
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/e784128902dfe01d489c4123d69918a9f3c1eac5",
+                "reference": "e784128902dfe01d489c4123d69918a9f3c1eac5"
             },
             "require": {
                 "amphp/amp": "^2.4.2",
@@ -2179,14 +2252,14 @@
                 "ext-tokenizer": "*",
                 "felixfbecker/advanced-json-rpc": "^3.1",
                 "felixfbecker/language-server-protocol": "^1.5.2",
+                "fidry/cpu-core-counter": "^0.4.0",
                 "netresearch/jsonmapper": "^1.0 || ^2.0 || ^3.0 || ^4.0",
                 "nikic/php-parser": "^4.13",
-                "openlss/lib-array2xml": "^1.0",
                 "php": "^7.4 || ~8.0.0 || ~8.1.0 || ~8.2.0",
-                "sebastian/diff": "^4.0",
+                "sebastian/diff": "^4.0 || ^5.0",
+                "spatie/array-to-xml": "^2.17.0",
                 "symfony/console": "^4.1.6 || ^5.0 || ^6.0",
-                "symfony/filesystem": "^5.4 || ^6.0",
-                "symfony/polyfill-php80": "^1.25"
+                "symfony/filesystem": "^5.4 || ^6.0"
             },
             "provide": {
                 "psalm/psalm": "self.version"
