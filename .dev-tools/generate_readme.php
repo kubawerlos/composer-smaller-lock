@@ -1,5 +1,5 @@
 #!/usr/bin/env php
-<?php
+<?php declare(strict_types=1);
 
 /*
  * This file is part of composer-smaller-lock.
@@ -16,7 +16,7 @@ $composerLockPath = __DIR__ . '/vendor/composer/composer/composer.lock';
 $originalComposerLockContent = file_get_contents($composerLockPath);
 $originalNumberOfLines = substr_count($originalComposerLockContent, "\n") + 1;
 
-$eventProvider = new class () extends \PHPUnit\Framework\TestCase {
+$eventProvider = new class () extends PHPUnit\Framework\TestCase {
     public function getEvent()
     {
         $configSource = $this->createMock(Composer\Config\ConfigSourceInterface::class);

@@ -39,17 +39,11 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         'version',
     ];
 
-    public function activate(Composer $composer, IOInterface $io): void
-    {
-    }
+    public function activate(Composer $composer, IOInterface $io): void {}
 
-    public function deactivate(Composer $composer, IOInterface $io): void
-    {
-    }
+    public function deactivate(Composer $composer, IOInterface $io): void {}
 
-    public function uninstall(Composer $composer, IOInterface $io): void
-    {
-    }
+    public function uninstall(Composer $composer, IOInterface $io): void {}
 
     public static function getSubscribedEvents(): array
     {
@@ -65,7 +59,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
         $composerLockContent = \file_get_contents($composerLockPath);
         \assert(\is_string($composerLockContent));
 
-        /** @var array<string, array<string, array<array<string>>>> $composerLockData */
+        /** @var array<string, array<string, array<string, array<string, string>>>> $composerLockData */
         $composerLockData = \json_decode($composerLockContent, true);
 
         foreach (['packages', 'packages-dev'] as $section) {
@@ -78,9 +72,9 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
     }
 
     /**
-     * @param array<array<string>> $data
+     * @param array<string, array<string, string>> $data
      *
-     * @return array<array<string>>
+     * @return array<string, array<string, string>>
      */
     private static function cleanPackage(array $data): array
     {
