@@ -64,9 +64,6 @@ jobs:
           php-version: ${{ matrix.php-version }}
           extensions: none, ctype, curl, dom, json, mbstring, opcache, tokenizer, xml, xmlwriter
           coverage: none
-          
-      - name: Show PHP modules
-        run: php -m
 
       - name: Get Composer data directory
         id: composer-data
