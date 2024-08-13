@@ -62,7 +62,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-version }}
-          extensions: none, curl, dom, mbstring, tokenizer, xml, xmlwriter
+          extensions: none, curl, dom, json, mbstring, tokenizer, xml, xmlwriter
           coverage: none
           
       - name: Show PHP modules
