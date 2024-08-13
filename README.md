@@ -4,7 +4,7 @@ Composer plugin to keep composer.lock small and readable.
 
 [![Latest stable version](https://img.shields.io/packagist/v/kubawerlos/composer-smaller-lock.svg?label=current%20version)](https://packagist.org/packages/kubawerlos/composer-smaller-lock)
 [![PHP version](https://img.shields.io/packagist/php-v/kubawerlos/composer-smaller-lock.svg)](https://php.net)
-[![CI Status](https://github.com/kubawerlos/composer-smaller-lock/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/kubawerlos/composer-smaller-lock/actions)
+[![CI status](https://github.com/kubawerlos/composer-smaller-lock/actions/workflows/ci.yaml/badge.svg)](https://github.com/kubawerlos/composer-smaller-lock/actions/workflows/ci.yaml)
 
 Removes unnecessary keys and makes reviewing changes much easier.
 
