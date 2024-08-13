@@ -29,21 +29,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ macos-latest, ubuntu-latest ]
-        php-version: [ '7.4', '8.2' ]
-        composer_flags: [ '' ]
         include:
           - os: ubuntu-latest
             php-version: '7.4'
             composer_flags: '--prefer-lowest'
           - os: ubuntu-latest
+            php-version: '7.4'
+          - os: ubuntu-latest
             php-version: '8.0'
           - os: ubuntu-latest
             php-version: '8.1'
+          - os: macos-latest
+            php-version: '8.2'
+          - os: ubuntu-latest
+            php-version: '8.2'
           - os: ubuntu-latest
             php-version: '8.3'
 
-    name: ${{ matrix.os }} / PHP ${{ matrix.php-version }} ${{ matrix.composer_flags }}
+    name: PHP ${{ matrix.php-version }} (${{ matrix.os }}) ${{ matrix.composer_flags }}
 
     runs-on: ${{ matrix.os }}
 
