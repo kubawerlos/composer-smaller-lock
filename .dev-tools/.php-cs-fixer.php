@@ -11,10 +11,13 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-return PhpCsFixerConfig\Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
+use PhpCsFixer\Finder;
+use PhpCsFixerConfig\Factory;
+
+return Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
     ->setFinder(
-        PhpCsFixer\Finder::create()
+        Finder::create()
             ->files()
             ->in(__DIR__ . '/../src')
             ->in(__DIR__ . '/../tests')

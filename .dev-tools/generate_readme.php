@@ -12,30 +12,38 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+use Composer\Config;
+use Composer\Config\ConfigSourceInterface;
+use Composer\Script\Event;
+use ComposerSmallerLock\Plugin;
+use PHPUnit\Framework\TestCase;
+use SebastianBergmann\Diff\Differ;
+use SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder;
+
 $composerLockPath = __DIR__ . '/vendor/composer/composer/composer.lock';
 $originalComposerLockContent = file_get_contents($composerLockPath);
 $originalNumberOfLines = substr_count($originalComposerLockContent, "\n") + 1;
 
-$eventProvider = new class () extends PHPUnit\Framework\TestCase {
+$eventProvider = new class () extends TestCase {
     public function getEvent()
     {
-        $configSource = $this->createMock(Composer\Config\ConfigSourceInterface::class);
+        $configSource = $this->createMock(ConfigSourceInterface::class);
         $configSource->method('getName')->willReturn(__DIR__ . '/vendor/composer/composer/composer.lock');
 
-        $config = $this->createMock(Composer\Config::class);
+        $config = $this->createMock(Config::class);
         $config->method('getConfigSource')->willReturn($configSource);
 
         $composer = $this->createMock(Composer\Composer::class);
         $composer->method('getConfig')->willReturn($config);
 
-        $event = $this->createMock(Composer\Script\Event::class);
+        $event = $this->createMock(Event::class);
         $event->method('getComposer')->willReturn($composer);
 
         return $event;
     }
 };
 
-ComposerSmallerLock\Plugin::clean($eventProvider->getEvent());
+Plugin::clean($eventProvider->getEvent());
 
 $newComposerLockContent = file_get_contents($composerLockPath);
 $newNumberOfLines = substr_count($newComposerLockContent, "\n") + 1;
@@ -68,7 +76,7 @@ function diff(string $from, string $to): string
     static $differ;
 
     if ($differ === null) {
-        $differ = new SebastianBergmann\Diff\Differ(new SebastianBergmann\Diff\Output\StrictUnifiedDiffOutputBuilder([
+        $differ = new Differ(new StrictUnifiedDiffOutputBuilder([
             'contextLines' => 1024,
             'fromFile' => '',
             'toFile' => '',
