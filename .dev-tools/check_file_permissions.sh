@@ -5,7 +5,6 @@ files_with_wrong_permissions=$(
     cd $(git rev-parse --show-toplevel)
     git ls-files --stage . \
         ':!*.sh' \
-        ':!generate_readme\.php' \
     | grep '^100755 ' \
     | sort -fh
 )
