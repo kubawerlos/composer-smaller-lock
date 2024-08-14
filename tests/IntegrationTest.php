@@ -12,6 +12,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Process\Process;
 
@@ -32,7 +33,10 @@ final class IntegrationTest extends TestCase
     public static function tearDownAfterClass(): void
     {
         $filesystem = new Filesystem();
-        $filesystem->remove(self::TEST_DIR);
+        try { // Workaround for running on Windows
+            $filesystem->remove(self::TEST_DIR);
+        } catch (IOException $exception) {
+        }
     }
 
     /**
