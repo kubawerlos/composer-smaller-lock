@@ -64,7 +64,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-version }}
-          extensions: none, ctype, curl, dom, json, mbstring, opcache, tokenizer, xml, xmlwriter
+          extensions: none, ctype, curl, dom, json, mbstring, opcache, openssl, tokenizer, xml, xmlwriter
           coverage: none
 
       - name: Get Composer data directory
