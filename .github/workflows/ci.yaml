@@ -44,6 +44,8 @@ jobs:
             php-version: '8.2'
           - os: ubuntu-latest
             php-version: '8.2'
+          - os: windows-latest
+            php-version: '8.2'
           - os: ubuntu-latest
             php-version: '8.3'
 
