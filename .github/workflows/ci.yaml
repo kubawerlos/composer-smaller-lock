@@ -53,7 +53,7 @@ jobs:
 
     env:
       COMPOSER_PROCESS_TIMEOUT: 300
-      
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
