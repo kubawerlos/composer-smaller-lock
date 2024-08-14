@@ -2,6 +2,7 @@
 set -eu
 
 files_with_wrong_permissions=$(
+    cd $(git rev-parse --show-toplevel)
     git ls-files --stage . \
         ':!*.sh' \
         ':!generate_readme\.php' \

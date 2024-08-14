@@ -24,6 +24,7 @@
 set -eu
 
 files_with_trailing_whitespaces=$(
+    cd $(git rev-parse --show-toplevel)
     git grep -EIn "\\s$" \
     | sort -fh
 )
