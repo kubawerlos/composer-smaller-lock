@@ -54,13 +54,12 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
 
     public static function clean(Event $event): void
     {
-        $composerLockPath = \substr($event->getComposer()->getConfig()->getConfigSource()->getName(), 0, -4) . 'lock';
+        $composerLockPath = $event->getComposer()->getConfig()->getConfigSource()->getName();
 
-        $composerLockContent = \file_get_contents($composerLockPath);
-        \assert(\is_string($composerLockContent));
+        $lock = new JsonFile($composerLockPath);
 
         /** @var array<string, array<string, array<string, array<string, string>>>> $composerLockData */
-        $composerLockData = \json_decode($composerLockContent, true);
+        $composerLockData = $lock->read();
 
         foreach (['packages', 'packages-dev'] as $section) {
             foreach (\array_keys($composerLockData[$section]) as $package) {
@@ -68,7 +67,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
             }
         }
 
-        \file_put_contents($composerLockPath, JsonFile::encode($composerLockData) . "\n");
+        $lock->write($composerLockData);
     }
 
     /**
