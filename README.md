@@ -21,7 +21,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 
 ## Example
 <details>
-    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.7.7/composer.lock'>composer.lock</a> has 2393 lines, with the plugin the number is reduced to 1203.</summary>
+    <summary>Composer's <a href='https://github.com/composer/composer/blob/2.8.5/composer.lock'>composer.lock</a> has 2396 lines, with the plugin the number is reduced to 1203.</summary>
 
 ```diff
  {
@@ -30,22 +30,22 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
          "This file is @generated automatically"
      ],
-     "content-hash": "4c03575acd7a47b4a22ffd1947c31b91",
+     "content-hash": "d6c1c91b79d7140594e249343184ce6f",
      "packages": [
          {
              "name": "composer/ca-bundle",
-             "version": "1.5.0",
+             "version": "1.5.5",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/ca-bundle.git",
-                 "reference": "0c5ccfcfea312b5c5a190a21ac5cef93f74baf99"
+                 "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/0c5ccfcfea312b5c5a190a21ac5cef93f74baf99",
--                "reference": "0c5ccfcfea312b5c5a190a21ac5cef93f74baf99",
+                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
+-                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6",
 -                "shasum": ""
-+                "reference": "0c5ccfcfea312b5c5a190a21ac5cef93f74baf99"
++                "reference": "08c50d5ec4c6ced7d0271d2862dec8c1033283e6"
              },
              "require": {
                  "ext-openssl": "*",
@@ -54,8 +54,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              },
 -            "require-dev": {
 -                "phpstan/phpstan": "^1.10",
--                "psr/log": "^1.0",
--                "symfony/phpunit-bridge": "^4.2 || ^5",
+-                "phpunit/phpunit": "^8 || ^9",
+-                "psr/log": "^1.0 || ^2.0 || ^3.0",
 -                "symfony/process": "^4.0 || ^5.0 || ^6.0 || ^7.0"
 -            },
              "type": "library",
@@ -91,7 +91,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "irc://irc.freenode.org/composer",
 -                "issues": "https://github.com/composer/ca-bundle/issues",
--                "source": "https://github.com/composer/ca-bundle/tree/1.5.0"
+-                "source": "https://github.com/composer/ca-bundle/tree/1.5.5"
 -            },
 -            "funding": [
 -                {
@@ -107,23 +107,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-03-15T14:00:32+00:00"
+-            "time": "2025-01-08T16:17:16+00:00"
 +            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle."
          },
          {
              "name": "composer/class-map-generator",
-             "version": "1.3.3",
+             "version": "1.5.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/class-map-generator.git",
-                 "reference": "61804f9973685ec7bead0fb7fe022825e3cd418e"
+                 "reference": "4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/class-map-generator/zipball/61804f9973685ec7bead0fb7fe022825e3cd418e",
--                "reference": "61804f9973685ec7bead0fb7fe022825e3cd418e",
+                 "url": "https://api.github.com/repos/composer/class-map-generator/zipball/4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915",
+-                "reference": "4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915",
 -                "shasum": ""
-+                "reference": "61804f9973685ec7bead0fb7fe022825e3cd418e"
++                "reference": "4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915"
              },
              "require": {
                  "composer/pcre": "^2.1 || ^3.1",
@@ -131,12 +131,12 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "symfony/finder": "^4.4 || ^5.3 || ^6 || ^7"
              },
 -            "require-dev": {
--                "phpstan/phpstan": "^1.6",
--                "phpstan/phpstan-deprecation-rules": "^1",
--                "phpstan/phpstan-phpunit": "^1",
--                "phpstan/phpstan-strict-rules": "^1.1",
--                "symfony/filesystem": "^5.4 || ^6",
--                "symfony/phpunit-bridge": "^5"
+-                "phpstan/phpstan": "^1.12 || ^2",
+-                "phpstan/phpstan-deprecation-rules": "^1 || ^2",
+-                "phpstan/phpstan-phpunit": "^1 || ^2",
+-                "phpstan/phpstan-strict-rules": "^1.1 || ^2",
+-                "phpunit/phpunit": "^8",
+-                "symfony/filesystem": "^5.4 || ^6"
 -            },
              "type": "library",
              "extra": {
@@ -166,7 +166,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/composer/class-map-generator/issues",
--                "source": "https://github.com/composer/class-map-generator/tree/1.3.3"
+-                "source": "https://github.com/composer/class-map-generator/tree/1.5.0"
 -            },
 -            "funding": [
 -                {
@@ -182,7 +182,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-06-10T11:53:54+00:00"
+-            "time": "2024-11-25T16:11:06+00:00"
 +            "description": "Utilities to scan PHP code and generate class maps."
          },
          {
@@ -258,29 +258,37 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "composer/pcre",
-             "version": "2.1.3",
+             "version": "2.3.2",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/pcre.git",
-                 "reference": "540af382c97b83c628227d5f87cf56466d476191"
+                 "reference": "ebb81df8f52b40172d14062ae96a06939d80a069"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/pcre/zipball/540af382c97b83c628227d5f87cf56466d476191",
--                "reference": "540af382c97b83c628227d5f87cf56466d476191",
+                 "url": "https://api.github.com/repos/composer/pcre/zipball/ebb81df8f52b40172d14062ae96a06939d80a069",
+-                "reference": "ebb81df8f52b40172d14062ae96a06939d80a069",
 -                "shasum": ""
-+                "reference": "540af382c97b83c628227d5f87cf56466d476191"
++                "reference": "ebb81df8f52b40172d14062ae96a06939d80a069"
              },
              "require": {
                  "php": "^7.2 || ^8.0"
              },
+-            "conflict": {
+-                "phpstan/phpstan": "<1.11.10"
+-            },
 -            "require-dev": {
--                "phpstan/phpstan": "^1.3",
--                "phpstan/phpstan-strict-rules": "^1.1",
--                "symfony/phpunit-bridge": "^5"
+-                "phpstan/phpstan": "^1.12 || ^2",
+-                "phpstan/phpstan-strict-rules": "^1 || ^2",
+-                "phpunit/phpunit": "^8 || ^9"
 -            },
              "type": "library",
              "extra": {
+                 "phpstan": {
+                     "includes": [
+                         "extension.neon"
+                     ]
+                 },
                  "branch-alias": {
                      "dev-main": "2.x-dev"
                  }
@@ -310,7 +318,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/composer/pcre/issues",
--                "source": "https://github.com/composer/pcre/tree/2.1.3"
+-                "source": "https://github.com/composer/pcre/tree/2.3.2"
 -            },
 -            "funding": [
 -                {
@@ -326,30 +334,30 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-03-19T09:03:05+00:00"
+-            "time": "2024-11-12T16:24:47+00:00"
 +            "description": "PCRE wrapping library that offers type-safe preg_* replacements."
          },
          {
              "name": "composer/semver",
-             "version": "3.4.0",
+             "version": "3.4.3",
              "source": {
                  "type": "git",
                  "url": "https://github.com/composer/semver.git",
-                 "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32"
+                 "reference": "4313d26ada5e0c4edfbd1dc481a92ff7bff91f12"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/composer/semver/zipball/35e8d0af4486141bc745f23a29cc2091eb624a32",
--                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32",
+                 "url": "https://api.github.com/repos/composer/semver/zipball/4313d26ada5e0c4edfbd1dc481a92ff7bff91f12",
+-                "reference": "4313d26ada5e0c4edfbd1dc481a92ff7bff91f12",
 -                "shasum": ""
-+                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32"
++                "reference": "4313d26ada5e0c4edfbd1dc481a92ff7bff91f12"
              },
              "require": {
                  "php": "^5.3.2 || ^7.0 || ^8.0"
              },
 -            "require-dev": {
--                "phpstan/phpstan": "^1.4",
--                "symfony/phpunit-bridge": "^4.2 || ^5"
+-                "phpstan/phpstan": "^1.11",
+-                "symfony/phpunit-bridge": "^3 || ^7"
 -            },
              "type": "library",
              "extra": {
@@ -393,7 +401,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "support": {
 -                "irc": "ircs://irc.libera.chat:6697/composer",
 -                "issues": "https://github.com/composer/semver/issues",
--                "source": "https://github.com/composer/semver/tree/3.4.0"
+-                "source": "https://github.com/composer/semver/tree/3.4.3"
 -            },
 -            "funding": [
 -                {
@@ -409,7 +417,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2023-08-31T09:50:34+00:00"
+-            "time": "2024-09-19T14:15:21+00:00"
 +            "description": "Semver library that offers utilities, version constraint parsing and validation."
          },
          {
@@ -564,21 +572,21 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "justinrainbow/json-schema",
-             "version": "v5.2.13",
+             "version": "5.3.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/jsonrainbow/json-schema.git",
-                 "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793"
+                 "reference": "feb2ca6dd1cebdaf1ed60a4c8de2e53ce11c4fd8"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/fbbe7e5d79f618997bc3332a6f49246036c45793",
--                "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793",
+                 "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/feb2ca6dd1cebdaf1ed60a4c8de2e53ce11c4fd8",
+-                "reference": "feb2ca6dd1cebdaf1ed60a4c8de2e53ce11c4fd8",
 -                "shasum": ""
-+                "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793"
++                "reference": "feb2ca6dd1cebdaf1ed60a4c8de2e53ce11c4fd8"
              },
              "require": {
-                 "php": ">=5.3.3"
+                 "php": ">=7.1"
              },
 -            "require-dev": {
 -                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
@@ -589,11 +597,6 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
                  "bin/validate-json"
              ],
              "type": "library",
-             "extra": {
-                 "branch-alias": {
-                     "dev-master": "5.0.x-dev"
-                 }
-             },
              "autoload": {
                  "psr-4": {
                      "JsonSchema\\": "src/JsonSchema/"
@@ -629,9 +632,9 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/jsonrainbow/json-schema/issues",
--                "source": "https://github.com/jsonrainbow/json-schema/tree/v5.2.13"
+-                "source": "https://github.com/jsonrainbow/json-schema/tree/5.3.0"
 -            },
--            "time": "2023-09-26T02:20:38+00:00"
+-            "time": "2024-07-06T21:00:26+00:00"
 +            "description": "A library to validate a json schema."
          },
          {
@@ -813,24 +816,24 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "seld/jsonlint",
-             "version": "1.10.2",
+             "version": "1.11.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/Seldaek/jsonlint.git",
-                 "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259"
+                 "reference": "1748aaf847fc731cfad7725aec413ee46f0cc3a2"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
--                "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
+                 "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/1748aaf847fc731cfad7725aec413ee46f0cc3a2",
+-                "reference": "1748aaf847fc731cfad7725aec413ee46f0cc3a2",
 -                "shasum": ""
-+                "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259"
++                "reference": "1748aaf847fc731cfad7725aec413ee46f0cc3a2"
              },
              "require": {
                  "php": "^5.3 || ^7.0 || ^8.0"
              },
 -            "require-dev": {
--                "phpstan/phpstan": "^1.5",
+-                "phpstan/phpstan": "^1.11",
 -                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^8.5.13"
 -            },
              "bin": [
@@ -862,7 +865,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            ],
 -            "support": {
 -                "issues": "https://github.com/Seldaek/jsonlint/issues",
--                "source": "https://github.com/Seldaek/jsonlint/tree/1.10.2"
+-                "source": "https://github.com/Seldaek/jsonlint/tree/1.11.0"
 -            },
 -            "funding": [
 -                {
@@ -874,7 +877,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-02-07T12:57:50+00:00"
+-            "time": "2024-07-11T14:55:45+00:00"
 +            "description": "JSON Linter"
          },
          {
@@ -992,18 +995,18 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
          },
          {
              "name": "symfony/console",
-             "version": "v5.4.40",
+             "version": "v5.4.47",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/console.git",
-                 "reference": "aa73115c0c24220b523625bfcfa655d7d73662dd"
+                 "reference": "c4ba980ca61a9eb18ee6bcc73f28e475852bb1ed"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/console/zipball/aa73115c0c24220b523625bfcfa655d7d73662dd",
--                "reference": "aa73115c0c24220b523625bfcfa655d7d73662dd",
+                 "url": "https://api.github.com/repos/symfony/console/zipball/c4ba980ca61a9eb18ee6bcc73f28e475852bb1ed",
+-                "reference": "c4ba980ca61a9eb18ee6bcc73f28e475852bb1ed",
 -                "shasum": ""
-+                "reference": "aa73115c0c24220b523625bfcfa655d7d73662dd"
++                "reference": "c4ba980ca61a9eb18ee6bcc73f28e475852bb1ed"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -1072,7 +1075,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "terminal"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/console/tree/v5.4.40"
+-                "source": "https://github.com/symfony/console/tree/v5.4.47"
 -            },
 -            "funding": [
 -                {
@@ -1088,35 +1091,35 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-05-31T14:33:22+00:00"
+-            "time": "2024-11-06T11:30:55+00:00"
 +            "description": "Eases the creation of beautiful and testable command line interfaces"
          },
          {
              "name": "symfony/deprecation-contracts",
-             "version": "v2.5.3",
+             "version": "v2.5.4",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/deprecation-contracts.git",
-                 "reference": "80d075412b557d41002320b96a096ca65aa2c98d"
+                 "reference": "605389f2a7e5625f273b53960dc46aeaf9c62918"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/80d075412b557d41002320b96a096ca65aa2c98d",
--                "reference": "80d075412b557d41002320b96a096ca65aa2c98d",
+                 "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/605389f2a7e5625f273b53960dc46aeaf9c62918",
+-                "reference": "605389f2a7e5625f273b53960dc46aeaf9c62918",
 -                "shasum": ""
-+                "reference": "80d075412b557d41002320b96a096ca65aa2c98d"
++                "reference": "605389f2a7e5625f273b53960dc46aeaf9c62918"
              },
              "require": {
                  "php": ">=7.1"
              },
              "type": "library",
              "extra": {
+                 "thanks": {
+                     "url": "https://github.com/symfony/contracts",
+                     "name": "symfony/contracts"
+                 },
                  "branch-alias": {
                      "dev-main": "2.5-dev"
-                 },
-                 "thanks": {
-                     "name": "symfony/contracts",
-                     "url": "https://github.com/symfony/contracts"
                  }
              },
              "autoload": {
@@ -1141,7 +1144,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "A generic function and convention to trigger deprecation notices",
 -            "homepage": "https://symfony.com",
 -            "support": {
--                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.3"
+-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.4"
 -            },
 -            "funding": [
 -                {
@@ -1157,23 +1160,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2023-01-24T14:02:46+00:00"
+-            "time": "2024-09-25T14:11:13+00:00"
 +            "description": "A generic function and convention to trigger deprecation notices"
          },
          {
              "name": "symfony/filesystem",
-             "version": "v5.4.40",
+             "version": "v5.4.45",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/filesystem.git",
-                 "reference": "26dd9912df6940810ea00f8f53ad48d6a3424995"
+                 "reference": "57c8294ed37d4a055b77057827c67f9558c95c54"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/filesystem/zipball/26dd9912df6940810ea00f8f53ad48d6a3424995",
--                "reference": "26dd9912df6940810ea00f8f53ad48d6a3424995",
+                 "url": "https://api.github.com/repos/symfony/filesystem/zipball/57c8294ed37d4a055b77057827c67f9558c95c54",
+-                "reference": "57c8294ed37d4a055b77057827c67f9558c95c54",
 -                "shasum": ""
-+                "reference": "26dd9912df6940810ea00f8f53ad48d6a3424995"
++                "reference": "57c8294ed37d4a055b77057827c67f9558c95c54"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -1210,7 +1213,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Provides basic utilities for the filesystem",
 -            "homepage": "https://symfony.com",
 -            "support": {
--                "source": "https://github.com/symfony/filesystem/tree/v5.4.40"
+-                "source": "https://github.com/symfony/filesystem/tree/v5.4.45"
 -            },
 -            "funding": [
 -                {
@@ -1226,23 +1229,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-05-31T14:33:22+00:00"
+-            "time": "2024-10-22T13:05:35+00:00"
 +            "description": "Provides basic utilities for the filesystem"
          },
          {
              "name": "symfony/finder",
-             "version": "v5.4.40",
+             "version": "v5.4.45",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/finder.git",
-                 "reference": "f51cff4687547641c7d8180d74932ab40b2205ce"
+                 "reference": "63741784cd7b9967975eec610b256eed3ede022b"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/finder/zipball/f51cff4687547641c7d8180d74932ab40b2205ce",
--                "reference": "f51cff4687547641c7d8180d74932ab40b2205ce",
+                 "url": "https://api.github.com/repos/symfony/finder/zipball/63741784cd7b9967975eec610b256eed3ede022b",
+-                "reference": "63741784cd7b9967975eec610b256eed3ede022b",
 -                "shasum": ""
-+                "reference": "f51cff4687547641c7d8180d74932ab40b2205ce"
++                "reference": "63741784cd7b9967975eec610b256eed3ede022b"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -1275,7 +1278,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Finds files and directories via an intuitive fluent interface",
 -            "homepage": "https://symfony.com",
 -            "support": {
--                "source": "https://github.com/symfony/finder/tree/v5.4.40"
+-                "source": "https://github.com/symfony/finder/tree/v5.4.45"
 -            },
 -            "funding": [
 -                {
@@ -1291,26 +1294,26 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-05-31T14:33:22+00:00"
+-            "time": "2024-09-28T13:32:08+00:00"
 +            "description": "Finds files and directories via an intuitive fluent interface"
          },
          {
              "name": "symfony/polyfill-ctype",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-ctype.git",
-                 "reference": "ef4d7e442ca910c4764bce785146269b30cb5fc4"
+                 "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/ef4d7e442ca910c4764bce785146269b30cb5fc4",
--                "reference": "ef4d7e442ca910c4764bce785146269b30cb5fc4",
+                 "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
+-                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
 -                "shasum": ""
-+                "reference": "ef4d7e442ca910c4764bce785146269b30cb5fc4"
++                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
              "provide": {
                  "ext-ctype": "*"
@@ -1321,8 +1324,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1356,7 +1359,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "portable"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1372,26 +1375,26 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill for ctype functions"
          },
          {
              "name": "symfony/polyfill-intl-grapheme",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                 "reference": "32a9da87d7b3245e09ac426c83d334ae9f06f80f"
+                 "reference": "b9123926e3b7bc2f98c02ad54f6a4b02b91a8abe"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/32a9da87d7b3245e09ac426c83d334ae9f06f80f",
--                "reference": "32a9da87d7b3245e09ac426c83d334ae9f06f80f",
+                 "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/b9123926e3b7bc2f98c02ad54f6a4b02b91a8abe",
+-                "reference": "b9123926e3b7bc2f98c02ad54f6a4b02b91a8abe",
 -                "shasum": ""
-+                "reference": "32a9da87d7b3245e09ac426c83d334ae9f06f80f"
++                "reference": "b9123926e3b7bc2f98c02ad54f6a4b02b91a8abe"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
 -            "suggest": {
 -                "ext-intl": "For best performance"
@@ -1399,8 +1402,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1436,7 +1439,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1452,26 +1455,26 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill for intl's grapheme_* functions"
          },
          {
              "name": "symfony/polyfill-intl-normalizer",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                 "reference": "bc45c394692b948b4d383a08d7753968bed9a83d"
+                 "reference": "3833d7255cc303546435cb650316bff708a1c75c"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/bc45c394692b948b4d383a08d7753968bed9a83d",
--                "reference": "bc45c394692b948b4d383a08d7753968bed9a83d",
+                 "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/3833d7255cc303546435cb650316bff708a1c75c",
+-                "reference": "3833d7255cc303546435cb650316bff708a1c75c",
 -                "shasum": ""
-+                "reference": "bc45c394692b948b4d383a08d7753968bed9a83d"
++                "reference": "3833d7255cc303546435cb650316bff708a1c75c"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
 -            "suggest": {
 -                "ext-intl": "For best performance"
@@ -1479,8 +1482,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1519,7 +1522,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1535,26 +1538,26 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill for intl's Normalizer class and related functions"
          },
          {
              "name": "symfony/polyfill-mbstring",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-mbstring.git",
-                 "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
+                 "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
--                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec",
+                 "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/85181ba99b2345b0ef10ce42ecac37612d9fd341",
+-                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341",
 -                "shasum": ""
-+                "reference": "9773676c8a1bb1f8d4340a62efe641cf76eda7ec"
++                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
              "provide": {
                  "ext-mbstring": "*"
@@ -1565,8 +1568,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1601,7 +1604,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1617,32 +1620,32 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill for the Mbstring extension"
          },
          {
              "name": "symfony/polyfill-php73",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-php73.git",
-                 "reference": "21bd091060673a1177ae842c0ef8fe30893114d2"
+                 "reference": "0f68c03565dcaaf25a890667542e8bd75fe7e5bb"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/21bd091060673a1177ae842c0ef8fe30893114d2",
--                "reference": "21bd091060673a1177ae842c0ef8fe30893114d2",
+                 "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/0f68c03565dcaaf25a890667542e8bd75fe7e5bb",
+-                "reference": "0f68c03565dcaaf25a890667542e8bd75fe7e5bb",
 -                "shasum": ""
-+                "reference": "21bd091060673a1177ae842c0ef8fe30893114d2"
++                "reference": "0f68c03565dcaaf25a890667542e8bd75fe7e5bb"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1679,7 +1682,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-php73/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1695,32 +1698,32 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions"
          },
          {
              "name": "symfony/polyfill-php80",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-php80.git",
-                 "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b"
+                 "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
--                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b",
+                 "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
+-                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
 -                "shasum": ""
-+                "reference": "87b68208d5c1188808dd7839ee1e6c8ec3b02f1b"
++                "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1761,7 +1764,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1777,32 +1780,32 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions"
          },
          {
              "name": "symfony/polyfill-php81",
-             "version": "v1.29.0",
+             "version": "v1.31.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/polyfill-php81.git",
-                 "reference": "c565ad1e63f30e7477fc40738343c62b40bc672d"
+                 "reference": "4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/c565ad1e63f30e7477fc40738343c62b40bc672d",
--                "reference": "c565ad1e63f30e7477fc40738343c62b40bc672d",
+                 "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c",
+-                "reference": "4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c",
 -                "shasum": ""
-+                "reference": "c565ad1e63f30e7477fc40738343c62b40bc672d"
++                "reference": "4a4cfc2d253c21a5ad0e53071df248ed48c6ce5c"
              },
              "require": {
-                 "php": ">=7.1"
+                 "php": ">=7.2"
              },
              "type": "library",
              "extra": {
                  "thanks": {
-                     "name": "symfony/polyfill",
-                     "url": "https://github.com/symfony/polyfill"
+                     "url": "https://github.com/symfony/polyfill",
+                     "name": "symfony/polyfill"
                  }
              },
              "autoload": {
@@ -1839,7 +1842,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "shim"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/polyfill-php81/tree/v1.29.0"
+-                "source": "https://github.com/symfony/polyfill-php81/tree/v1.31.0"
 -            },
 -            "funding": [
 -                {
@@ -1855,23 +1858,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-01-29T20:11:03+00:00"
+-            "time": "2024-09-09T11:45:10+00:00"
 +            "description": "Symfony polyfill backporting some PHP 8.1+ features to lower PHP versions"
          },
          {
              "name": "symfony/process",
-             "version": "v5.4.40",
+             "version": "v5.4.47",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/process.git",
-                 "reference": "deedcb3bb4669cae2148bc920eafd2b16dc7c046"
+                 "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/process/zipball/deedcb3bb4669cae2148bc920eafd2b16dc7c046",
--                "reference": "deedcb3bb4669cae2148bc920eafd2b16dc7c046",
+                 "url": "https://api.github.com/repos/symfony/process/zipball/5d1662fb32ebc94f17ddb8d635454a776066733d",
+-                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d",
 -                "shasum": ""
-+                "reference": "deedcb3bb4669cae2148bc920eafd2b16dc7c046"
++                "reference": "5d1662fb32ebc94f17ddb8d635454a776066733d"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -1903,7 +1906,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Executes commands in sub-processes",
 -            "homepage": "https://symfony.com",
 -            "support": {
--                "source": "https://github.com/symfony/process/tree/v5.4.40"
+-                "source": "https://github.com/symfony/process/tree/v5.4.47"
 -            },
 -            "funding": [
 -                {
@@ -1919,23 +1922,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-05-31T14:33:22+00:00"
+-            "time": "2024-11-06T11:36:42+00:00"
 +            "description": "Executes commands in sub-processes"
          },
          {
              "name": "symfony/service-contracts",
-             "version": "v2.5.3",
+             "version": "v2.5.4",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/service-contracts.git",
-                 "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3"
+                 "reference": "f37b419f7aea2e9abf10abd261832cace12e3300"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/a2329596ddc8fd568900e3fc76cba42489ecc7f3",
--                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3",
+                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/f37b419f7aea2e9abf10abd261832cace12e3300",
+-                "reference": "f37b419f7aea2e9abf10abd261832cace12e3300",
 -                "shasum": ""
-+                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3"
++                "reference": "f37b419f7aea2e9abf10abd261832cace12e3300"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -1950,12 +1953,12 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            },
              "type": "library",
              "extra": {
+                 "thanks": {
+                     "url": "https://github.com/symfony/contracts",
+                     "name": "symfony/contracts"
+                 },
                  "branch-alias": {
                      "dev-main": "2.5-dev"
-                 },
-                 "thanks": {
-                     "name": "symfony/contracts",
-                     "url": "https://github.com/symfony/contracts"
                  }
              },
              "autoload": {
@@ -1988,7 +1991,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "standards"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/service-contracts/tree/v2.5.3"
+-                "source": "https://github.com/symfony/service-contracts/tree/v2.5.4"
 -            },
 -            "funding": [
 -                {
@@ -2004,23 +2007,23 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2023-04-21T15:04:16+00:00"
+-            "time": "2024-09-25T14:11:13+00:00"
 +            "description": "Generic abstractions related to writing services"
          },
          {
              "name": "symfony/string",
-             "version": "v5.4.40",
+             "version": "v5.4.47",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/string.git",
-                 "reference": "142877285aa974a6f7685e292ab5ba9aae86b143"
+                 "reference": "136ca7d72f72b599f2631aca474a4f8e26719799"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/string/zipball/142877285aa974a6f7685e292ab5ba9aae86b143",
--                "reference": "142877285aa974a6f7685e292ab5ba9aae86b143",
+                 "url": "https://api.github.com/repos/symfony/string/zipball/136ca7d72f72b599f2631aca474a4f8e26719799",
+-                "reference": "136ca7d72f72b599f2631aca474a4f8e26719799",
 -                "shasum": ""
-+                "reference": "142877285aa974a6f7685e292ab5ba9aae86b143"
++                "reference": "136ca7d72f72b599f2631aca474a4f8e26719799"
              },
              "require": {
                  "php": ">=7.2.5",
@@ -2076,7 +2079,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                "utf8"
 -            ],
 -            "support": {
--                "source": "https://github.com/symfony/string/tree/v5.4.40"
+-                "source": "https://github.com/symfony/string/tree/v5.4.47"
 -            },
 -            "funding": [
 -                {
@@ -2092,25 +2095,25 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-05-31T14:33:22+00:00"
+-            "time": "2024-11-10T20:33:58+00:00"
 +            "description": "Provides an object-oriented API to strings and deals with bytes, UTF-8 code points and grapheme clusters in a unified way"
          }
      ],
      "packages-dev": [
          {
              "name": "phpstan/phpstan",
-             "version": "1.11.4",
+             "version": "1.12.15",
              "source": {
                  "type": "git",
                  "url": "https://github.com/phpstan/phpstan.git",
-                 "reference": "9100a76ce8015b9aa7125b9171ae3a76887b6c82"
+                 "reference": "c91d4e8bc056f46cf653656e6f71004b254574d1"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9100a76ce8015b9aa7125b9171ae3a76887b6c82",
--                "reference": "9100a76ce8015b9aa7125b9171ae3a76887b6c82",
+                 "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c91d4e8bc056f46cf653656e6f71004b254574d1",
+-                "reference": "c91d4e8bc056f46cf653656e6f71004b254574d1",
 -                "shasum": ""
-+                "reference": "9100a76ce8015b9aa7125b9171ae3a76887b6c82"
++                "reference": "c91d4e8bc056f46cf653656e6f71004b254574d1"
              },
              "require": {
                  "php": "^7.2|^8.0"
@@ -2154,27 +2157,27 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "github"
 -                }
 -            ],
--            "time": "2024-06-06T12:19:22+00:00"
+-            "time": "2025-01-05T16:40:22+00:00"
 +            "description": "PHPStan - PHP Static Analysis Tool"
          },
          {
              "name": "phpstan/phpstan-deprecation-rules",
-             "version": "1.2.0",
+             "version": "1.2.1",
              "source": {
                  "type": "git",
                  "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
-                 "reference": "fa8cce7720fa782899a0aa97b6a41225d1bb7b26"
+                 "reference": "f94d246cc143ec5a23da868f8f7e1393b50eaa82"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/fa8cce7720fa782899a0aa97b6a41225d1bb7b26",
--                "reference": "fa8cce7720fa782899a0aa97b6a41225d1bb7b26",
+                 "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/f94d246cc143ec5a23da868f8f7e1393b50eaa82",
+-                "reference": "f94d246cc143ec5a23da868f8f7e1393b50eaa82",
 -                "shasum": ""
-+                "reference": "fa8cce7720fa782899a0aa97b6a41225d1bb7b26"
++                "reference": "f94d246cc143ec5a23da868f8f7e1393b50eaa82"
              },
              "require": {
                  "php": "^7.2 || ^8.0",
-                 "phpstan/phpstan": "^1.11"
+                 "phpstan/phpstan": "^1.12"
              },
 -            "require-dev": {
 -                "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -2201,29 +2204,29 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
 -            "support": {
 -                "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
--                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/1.2.0"
+-                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/1.2.1"
 -            },
--            "time": "2024-04-20T06:39:48+00:00"
+-            "time": "2024-09-11T15:52:35+00:00"
 +            "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits."
          },
          {
              "name": "phpstan/phpstan-phpunit",
-             "version": "1.4.0",
+             "version": "1.4.2",
              "source": {
                  "type": "git",
                  "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                 "reference": "f3ea021866f4263f07ca3636bf22c64be9610c11"
+                 "reference": "72a6721c9b64b3e4c9db55abbc38f790b318267e"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/f3ea021866f4263f07ca3636bf22c64be9610c11",
--                "reference": "f3ea021866f4263f07ca3636bf22c64be9610c11",
+                 "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/72a6721c9b64b3e4c9db55abbc38f790b318267e",
+-                "reference": "72a6721c9b64b3e4c9db55abbc38f790b318267e",
 -                "shasum": ""
-+                "reference": "f3ea021866f4263f07ca3636bf22c64be9610c11"
++                "reference": "72a6721c9b64b3e4c9db55abbc38f790b318267e"
              },
              "require": {
                  "php": "^7.2 || ^8.0",
-                 "phpstan/phpstan": "^1.11"
+                 "phpstan/phpstan": "^1.12"
              },
 -            "conflict": {
 -                "phpunit/phpunit": "<7.0"
@@ -2255,29 +2258,29 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "PHPUnit extensions and rules for PHPStan",
 -            "support": {
 -                "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
--                "source": "https://github.com/phpstan/phpstan-phpunit/tree/1.4.0"
+-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/1.4.2"
 -            },
--            "time": "2024-04-20T06:39:00+00:00"
+-            "time": "2024-12-17T17:20:49+00:00"
 +            "description": "PHPUnit extensions and rules for PHPStan"
          },
          {
              "name": "phpstan/phpstan-strict-rules",
-             "version": "1.6.0",
+             "version": "1.6.2",
              "source": {
                  "type": "git",
                  "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                 "reference": "363f921dd8441777d4fc137deb99beb486c77df1"
+                 "reference": "b564ca479e7e735f750aaac4935af965572a7845"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/363f921dd8441777d4fc137deb99beb486c77df1",
--                "reference": "363f921dd8441777d4fc137deb99beb486c77df1",
+                 "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/b564ca479e7e735f750aaac4935af965572a7845",
+-                "reference": "b564ca479e7e735f750aaac4935af965572a7845",
 -                "shasum": ""
-+                "reference": "363f921dd8441777d4fc137deb99beb486c77df1"
++                "reference": "b564ca479e7e735f750aaac4935af965572a7845"
              },
              "require": {
                  "php": "^7.2 || ^8.0",
-                 "phpstan/phpstan": "^1.11"
+                 "phpstan/phpstan": "^1.12.4"
              },
 -            "require-dev": {
 -                "nikic/php-parser": "^4.13.0",
@@ -2306,30 +2309,30 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Extra strict and opinionated rules for PHPStan",
 -            "support": {
 -                "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
--                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.6.0"
+-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/1.6.2"
 -            },
--            "time": "2024-04-20T06:37:51+00:00"
+-            "time": "2025-01-19T13:02:24+00:00"
 +            "description": "Extra strict and opinionated rules for PHPStan"
          },
          {
              "name": "phpstan/phpstan-symfony",
-             "version": "1.4.4",
+             "version": "1.4.13",
              "source": {
                  "type": "git",
                  "url": "https://github.com/phpstan/phpstan-symfony.git",
-                 "reference": "bca27f1701fc1a297749e6c2a1e3da4462c1a6af"
+                 "reference": "dd1aaa7f85f9916222a2ce7e4d21072fe03958f4"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/bca27f1701fc1a297749e6c2a1e3da4462c1a6af",
--                "reference": "bca27f1701fc1a297749e6c2a1e3da4462c1a6af",
+                 "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/dd1aaa7f85f9916222a2ce7e4d21072fe03958f4",
+-                "reference": "dd1aaa7f85f9916222a2ce7e4d21072fe03958f4",
 -                "shasum": ""
-+                "reference": "bca27f1701fc1a297749e6c2a1e3da4462c1a6af"
++                "reference": "dd1aaa7f85f9916222a2ce7e4d21072fe03958f4"
              },
              "require": {
                  "ext-simplexml": "*",
                  "php": "^7.2 || ^8.0",
-                 "phpstan/phpstan": "^1.11"
+                 "phpstan/phpstan": "^1.12"
              },
 -            "conflict": {
 -                "symfony/framework-bundle": "<3.0"
@@ -2380,25 +2383,25 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Symfony Framework extensions and rules for PHPStan",
 -            "support": {
 -                "issues": "https://github.com/phpstan/phpstan-symfony/issues",
--                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.4.4"
+-                "source": "https://github.com/phpstan/phpstan-symfony/tree/1.4.13"
 -            },
--            "time": "2024-06-07T09:43:24+00:00"
+-            "time": "2025-01-04T13:55:31+00:00"
 +            "description": "Symfony Framework extensions and rules for PHPStan"
          },
          {
              "name": "symfony/phpunit-bridge",
-             "version": "v7.1.1",
+             "version": "v7.2.0",
              "source": {
                  "type": "git",
                  "url": "https://github.com/symfony/phpunit-bridge.git",
-                 "reference": "3e1cb8c4dee341cfe96ae9fe29b1acda52a6bb16"
+                 "reference": "2bbde92ab25a0e2c88160857af7be9db5da0d145"
              },
              "dist": {
                  "type": "zip",
-                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/3e1cb8c4dee341cfe96ae9fe29b1acda52a6bb16",
--                "reference": "3e1cb8c4dee341cfe96ae9fe29b1acda52a6bb16",
+                 "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/2bbde92ab25a0e2c88160857af7be9db5da0d145",
+-                "reference": "2bbde92ab25a0e2c88160857af7be9db5da0d145",
 -                "shasum": ""
-+                "reference": "3e1cb8c4dee341cfe96ae9fe29b1acda52a6bb16"
++                "reference": "2bbde92ab25a0e2c88160857af7be9db5da0d145"
              },
              "require": {
                  "php": ">=7.2.5"
@@ -2417,8 +2420,8 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
              "type": "symfony-bridge",
              "extra": {
                  "thanks": {
-                     "name": "phpunit/phpunit",
-                     "url": "https://github.com/sebastianbergmann/phpunit"
+                     "url": "https://github.com/sebastianbergmann/phpunit",
+                     "name": "phpunit/phpunit"
                  }
              },
              "autoload": {
@@ -2450,7 +2453,7 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -            "description": "Provides utilities for PHPUnit, especially user deprecation notices management",
 -            "homepage": "https://symfony.com",
 -            "support": {
--                "source": "https://github.com/symfony/phpunit-bridge/tree/v7.1.1"
+-                "source": "https://github.com/symfony/phpunit-bridge/tree/v7.2.0"
 -            },
 -            "funding": [
 -                {
@@ -2466,19 +2469,21 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
 -                    "type": "tidelift"
 -                }
 -            ],
--            "time": "2024-06-04T06:50:37+00:00"
+-            "time": "2024-11-13T16:15:23+00:00"
 +            "description": "Provides utilities for PHPUnit, especially user deprecation notices management"
          }
      ],
      "aliases": [],
      "minimum-stability": "stable",
-     "stability-flags": [],
+-    "stability-flags": {},
++    "stability-flags": [],
      "prefer-stable": false,
      "prefer-lowest": false,
      "platform": {
          "php": "^7.2.5 || ^8.0"
      },
-     "platform-dev": [],
+-    "platform-dev": {},
++    "platform-dev": [],
      "platform-overrides": {
          "php": "7.2.5"
      },

@@ -14,15 +14,19 @@ require_once __DIR__ . '/vendor/autoload.php';
 use PhpCsFixer\Finder;
 use PhpCsFixerConfig\Factory;
 
-return Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
+$config = Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
     ->setFinder(
         Finder::create()
             ->files()
             ->in(__DIR__ . '/../src')
             ->in(__DIR__ . '/../tests')
+            ->in(__DIR__)
             ->append([
-                __DIR__ . '/generate_readme.php',
                 __FILE__,
             ]),
     );
+$rules = $config->getRules();
+$rules['php_unit_attributes'] = false; // @todo: remove when support for PHP 7.4 is dropped
+
+return $config->setRules($rules);
