@@ -2,7 +2,7 @@
     "type": "project",
     "require": {
         "php": "^8.4",
-        "composer/composer": "^2.7.7",
+        "composer/composer": "^2.8.5",
         "ergebnis/composer-normalize": "^2.44.0",
         "kubawerlos/composer-smaller-lock": "^1.0.1",
         "kubawerlos/php-cs-fixer-config": "^3.27",
