@@ -3,7 +3,7 @@
     "require": {
         "php": "^8.4",
         "composer/composer": "^2.7.7",
-        "ergebnis/composer-normalize": "^2.44.0",
+        "ergebnis/composer-normalize": "^2.45.0",
         "kubawerlos/composer-smaller-lock": "^1.0.1",
         "kubawerlos/php-cs-fixer-config": "^3.27",
         "mi-schi/phpmd-extension": "^4.3",
