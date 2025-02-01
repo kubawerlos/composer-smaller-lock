@@ -54,7 +54,7 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
 
     public static function clean(Event $event): void
     {
-        $composerLockPath = $event->getComposer()->getConfig()->getConfigSource()->getName();
+        $composerLockPath = \substr($event->getComposer()->getConfig()->getConfigSource()->getName(), 0, -4) . 'lock';
 
         $lock = new JsonFile($composerLockPath);
 
