@@ -10,3 +10,7 @@ updates:
     reviewers:
       - 'kubawerlos'
     versioning-strategy: 'increase'
+    groups:
+      all:
+        patterns:
+          - '*'
