@@ -29,5 +29,6 @@
             }
         }
     ],
-    "packages-dev": []
+    "packages-dev": [],
+    "stability-flags": []
 }
