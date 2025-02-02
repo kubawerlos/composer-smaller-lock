@@ -39,5 +39,6 @@
             },
             "version": "1.0.0"
         }
-    ]
+    ],
+    "stability-flags": []
 }
