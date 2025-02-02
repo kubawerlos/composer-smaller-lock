@@ -68,11 +68,15 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
             }
         }
 
-        $composerLockData = \Closure::bind(
-            static fn (Locker $locker) => $locker->fixupJsonDataType($composerLockData),
-            null,
-            Locker::class,
-        )((new \ReflectionClass(Locker::class))->newInstanceWithoutConstructor());
+        $locker = (new \ReflectionClass(Locker::class))->newInstanceWithoutConstructor();
+
+        if (\method_exists($locker, 'fixupJsonDataType')) {
+            $composerLockData = \Closure::bind(
+                static fn (Locker $locker) => $locker->fixupJsonDataType($composerLockData),
+                null,
+                Locker::class,
+            )($locker);
+        }
 
         $lock->write($composerLockData);
     }

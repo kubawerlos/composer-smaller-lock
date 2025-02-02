@@ -26,6 +26,8 @@ use Symfony\Component\Finder\SplFileInfo;
  * @internal
  *
  * @covers \ComposerSmallerLock\Plugin
+ *
+ * @requires PHP ^8.1
  */
 final class PluginTest extends TestCase
 {
