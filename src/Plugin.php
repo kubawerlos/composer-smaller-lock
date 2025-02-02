@@ -15,6 +15,7 @@ use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\IO\IOInterface;
 use Composer\Json\JsonFile;
+use Composer\Package\Locker;
 use Composer\Plugin\PluginInterface;
 use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
@@ -66,6 +67,12 @@ final class Plugin implements EventSubscriberInterface, PluginInterface
                 $composerLockData[$section][$package] = self::cleanPackage($composerLockData[$section][$package]);
             }
         }
+
+        $composerLockData = \Closure::bind(
+            static fn (Locker $locker) => $locker->fixupJsonDataType($composerLockData),
+            null,
+            Locker::class,
+        )((new \ReflectionClass(Locker::class))->newInstanceWithoutConstructor());
 
         $lock->write($composerLockData);
     }

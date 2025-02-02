@@ -2475,15 +2475,13 @@ None - this is a Composer's plugin, it will subscribe to Composer's events itsel
      ],
      "aliases": [],
      "minimum-stability": "stable",
--    "stability-flags": {},
-+    "stability-flags": [],
+     "stability-flags": {},
      "prefer-stable": false,
      "prefer-lowest": false,
      "platform": {
          "php": "^7.2.5 || ^8.0"
      },
--    "platform-dev": {},
-+    "platform-dev": [],
+     "platform-dev": {},
      "platform-overrides": {
          "php": "7.2.5"
      },
