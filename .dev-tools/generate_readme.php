@@ -24,7 +24,7 @@ $composerLockPath = __DIR__ . '/vendor/composer/composer/composer.lock';
 $originalComposerLockContent = file_get_contents($composerLockPath);
 $originalNumberOfLines = substr_count($originalComposerLockContent, "\n") + 1;
 
-$eventProvider = new class () extends TestCase {
+$eventProvider = new class ('name') extends TestCase {
     public function getEvent()
     {
         $configSource = $this->createMock(ConfigSourceInterface::class);
