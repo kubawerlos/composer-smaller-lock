@@ -43,7 +43,7 @@
             "@composer --working-dir=.dev-tools fix"
         ],
         "install-dev-tools": [
-            "@composer --working-dir=.dev-tools install -vvv"
+            "@composer --working-dir=.dev-tools --quiet install"
         ],
         "test": [
             "phpunit"
