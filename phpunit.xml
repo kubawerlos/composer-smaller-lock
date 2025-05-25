@@ -21,13 +21,4 @@
         </testsuite>
     </testsuites>
 
-    <coverage>
-        <include>
-            <directory>./src</directory>
-        </include>
-        <report>
-            <text outputFile='php://stdout' showOnlySummary='true' />
-        </report>
-    </coverage>
-
 </phpunit>
