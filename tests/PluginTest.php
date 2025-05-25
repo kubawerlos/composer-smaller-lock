@@ -46,7 +46,7 @@ final class PluginTest extends TestCase
         $plugin = new Plugin();
 
         $composer = $this->createMock(Composer::class);
-        $composer->expects(self::never())->method('getPluginManager');
+        $composer->expects($this->never())->method('getPluginManager');
 
         $plugin->{$function}($composer, $this->createMock(IOInterface::class));
     }
