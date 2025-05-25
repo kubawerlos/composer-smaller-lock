@@ -47,14 +47,16 @@ jobs:
             php-version: '8.1'
           - os: ubuntu-latest
             php-version: '8.2'
-          - os: macos-latest
-            php-version: '8.3'
           - os: ubuntu-latest
             php-version: '8.3'
-          - os: windows-latest
-            php-version: '8.3'
+          - os: macos-latest
+            php-version: '8.4'
           - os: ubuntu-latest
             php-version: '8.4'
+          - os: windows-latest
+            php-version: '8.4'
+          - os: ubuntu-latest
+            php-version: '8.5'
 
     name: PHP ${{ matrix.php-version }} (${{ matrix.os }}) ${{ matrix.composer_flags }}
 
