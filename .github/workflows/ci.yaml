@@ -18,7 +18,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.4'
+          php-version: '8.5'
           extensions: none, curl, dom, iconv, mbstring, opcache, simplexml, tokenizer, xml, xmlwriter
           coverage: none
 
@@ -49,13 +49,13 @@ jobs:
             php-version: '8.2'
           - os: ubuntu-latest
             php-version: '8.3'
+          - os: ubuntu-latest
+            php-version: '8.4'
+          - os: ubuntu-latest
+            php-version: '8.5'
           - os: macos-latest
-            php-version: '8.4'
-          - os: ubuntu-latest
-            php-version: '8.4'
+            php-version: '8.5'
           - os: windows-latest
-            php-version: '8.4'
-          - os: ubuntu-latest
             php-version: '8.5'
 
     name: PHP ${{ matrix.php-version }} (${{ matrix.os }}) ${{ matrix.composer_flags }}
