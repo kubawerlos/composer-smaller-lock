@@ -20,9 +20,12 @@ use Composer\Plugin\PluginInterface;
 use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
 
+/**
+ * @no-named-arguments
+ */
 final class Plugin implements EventSubscriberInterface, PluginInterface
 {
-    private const PROPERTIES_TO_KEEP = [
+    private const array PROPERTIES_TO_KEEP = [
         'autoload',
         'bin',
         'description',
