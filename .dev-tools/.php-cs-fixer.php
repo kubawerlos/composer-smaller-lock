@@ -13,6 +13,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use PhpCsFixer\Finder;
 use PhpCsFixerConfig\Factory;
+use PhpCsFixerCustomFixers\Fixer\TypedClassConstantFixer;
 
 $config = Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 2021)
     ->setUsingCache(false)
@@ -28,5 +29,6 @@ $config = Factory::createForLibrary('composer-smaller-lock', 'Kuba Werłos', 202
     );
 $rules = $config->getRules();
 $rules['php_unit_attributes'] = false; // @todo: remove when support for PHP 7.4 is dropped
+$rules[TypedClassConstantFixer::name()] = false; // @todo: remove when support for PHP 8.2 is dropped
 
 return $config->setRules($rules);

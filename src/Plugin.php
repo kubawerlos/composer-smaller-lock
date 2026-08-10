@@ -25,7 +25,7 @@ use Composer\Script\ScriptEvents;
  */
 final class Plugin implements EventSubscriberInterface, PluginInterface
 {
-    private const array PROPERTIES_TO_KEEP = [
+    private const PROPERTIES_TO_KEEP = [
         'autoload',
         'bin',
         'description',
