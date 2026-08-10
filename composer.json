@@ -9,7 +9,7 @@
         "composer-plugin-api": "^2.0.12"
     },
     "require-dev": {
-        "composer/composer": "^2.0.12",
+        "composer/composer": "^2.9.6",
         "mikey179/vfsstream": "^1.6.8",
         "phpunit/phpunit": "^9.6.23 || ^10.5.46 || ^11.5.21"
     },
