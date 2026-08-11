@@ -72,7 +72,7 @@ jobs:
         with:
           php-version: ${{ matrix.php-version }}
           extensions: none, ctype, curl, dom, json, mbstring, opcache, openssl, tokenizer, xml, xmlwriter
-          ini-values: opcache.enable_cli=1, opcache.file_cache=${{ runner.temp }}/opcache, opcache.file_cache_only=1
+          ini-values: opcache.enable_cli=1, opcache.file_cache=${{ runner.temp }}, opcache.file_cache_only=1
           coverage: none
 
       - if: runner.os == 'Windows'
